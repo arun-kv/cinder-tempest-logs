@@ -1,0 +1,877 @@
+{1} setUpClass (tempest.api.compute.admin.test_live_migration.LiveMigrationTest) ... SKIPPED: LiveMigrationTest skipped as live-migration is not available
+{2} setUpClass (tempest.api.compute.admin.test_agents.AgentsAdminTestJSON) ... SKIPPED: The os-agents API is not supported.
+{4} setUpClass (tempest.api.compute.servers.test_server_metadata.ServerMetadataTestJSON) ... SKIPPED: Metadata is read-only on non-Xen-based deployments.
+{6} setUpClass (tempest.api.compute.servers.test_server_personality.ServerPersonalityTestJSON) ... SKIPPED: Nova personality feature disabled
+{3} setUpClass (tempest.api.compute.test_networks.ComputeNetworksTest) ... SKIPPED: nova-network is not available.
+{7} setUpClass (tempest.api.compute.admin.test_servers_on_multinodes.ServersOnMultiNodesTest) ... SKIPPED: Less than 2 compute nodes, skipping multi-nodes test.
+{5} setUpClass (tempest.api.volume.admin.test_volume_retype.VolumeRetypeWithMigrationTest) ... SKIPPED: Cinder multi-backend feature disabled
+{17} setUpClass (tempest.api.compute.admin.test_fixed_ips_negative.FixedIPsNegativeTestJson) ... SKIPPED: FixedIPsNegativeTestJson skipped as neutron is available
+{15} setUpClass (tempest.scenario.test_network_qos_placement.MinBwAllocationPlacementTest) ... SKIPPED: Skipped as no physnet is available in config for placement based QoS allocation.
+{16} setUpClass (tempest.api.compute.volumes.test_attach_volume.AttachVolumeMultiAttachTest) ... SKIPPED: Volume multi-attach is not available.
+{10} setUpClass (tempest.api.compute.admin.test_live_migration.LiveAutoBlockMigrationV225Test) ... SKIPPED: LiveAutoBlockMigrationV225Test skipped as live-migration is not available
+{23} setUpClass (tempest.api.compute.admin.test_volumes_negative.UpdateMultiattachVolumeNegativeTest) ... SKIPPED: Volume multi-attach is not available.
+{20} tempest.api.compute.admin.test_quotas_negative.QuotasSecurityGroupAdminNegativeTest.test_security_groups_exceed_limit ... SKIPPED: Skipped until bug: https://launchpad.net/bugs/1186354 is resolved.
+{20} tempest.api.compute.admin.test_quotas_negative.QuotasSecurityGroupAdminNegativeTest.test_security_groups_rules_exceed_limit ... SKIPPED: Skipped until bug: https://launchpad.net/bugs/1186354 is resolved.
+{6} tempest.scenario.test_network_advanced_server_ops.TestNetworkAdvancedServerOps.test_server_connectivity_cold_migration ... SKIPPED: Less than 2 compute nodes, skipping multinode tests.
+{6} tempest.scenario.test_network_advanced_server_ops.TestNetworkAdvancedServerOps.test_server_connectivity_cold_migration_revert ... SKIPPED: Less than 2 compute nodes, skipping multinode tests.
+{6} tempest.scenario.test_network_advanced_server_ops.TestNetworkAdvancedServerOps.test_server_connectivity_live_migration ... SKIPPED: Live migration is not available.
+{18} tempest.api.compute.admin.test_availability_zone_negative.AZAdminNegativeTestJSON.test_get_availability_zone_list_detail_with_non_admin_user [0.576053s] ... ok
+{21} tempest.api.compute.admin.test_availability_zone.AZAdminV2TestJSON.test_get_availability_zone_list [0.530724s] ... ok
+{21} tempest.api.compute.admin.test_availability_zone.AZAdminV2TestJSON.test_get_availability_zone_list_detail [0.264769s] ... ok
+{35} tempest.api.compute.admin.test_flavors_extra_specs_negative.FlavorsExtraSpecsNegativeTestJSON.test_flavor_get_nonexistent_key [0.267855s] ... ok
+{37} tempest.api.compute.admin.test_hosts_negative.HostsAdminNegativeTestJSON.test_list_hosts_with_non_admin_user [0.334024s] ... ok
+{26} tempest.api.compute.admin.test_hypervisor_negative.HypervisorAdminNegativeUnderV252Test.test_search_hypervisor_with_non_admin_user [0.907069s] ... ok
+{35} tempest.api.compute.admin.test_flavors_extra_specs_negative.FlavorsExtraSpecsNegativeTestJSON.test_flavor_non_admin_set_keys [0.115143s] ... ok
+{27} tempest.api.compute.admin.test_flavors.FlavorsAdminTestJSON.test_create_flavor_using_string_ram [0.938068s] ... ok
+{37} tempest.api.compute.admin.test_hosts_negative.HostsAdminNegativeTestJSON.test_reboot_host_with_non_admin_user [0.051331s] ... ok
+{22} tempest.api.compute.admin.test_flavors_extra_specs.FlavorsExtraSpecsTestJSON.test_flavor_non_admin_get_all_keys [0.592564s] ... ok
+{26} tempest.api.compute.admin.test_hypervisor_negative.HypervisorAdminNegativeUnderV252Test.test_search_nonexistent_hypervisor [0.057658s] ... ok
+{19} tempest.api.compute.admin.test_flavors_extra_specs.FlavorMetadataValidation.test_flavor_update_with_custom_namespace [1.061994s] ... ok
+{37} tempest.api.compute.admin.test_hosts_negative.HostsAdminNegativeTestJSON.test_reboot_nonexistent_host [0.070962s] ... ok
+{35} tempest.api.compute.admin.test_flavors_extra_specs_negative.FlavorsExtraSpecsNegativeTestJSON.test_flavor_non_admin_unset_keys [0.129466s] ... ok
+{13} setUpClass (tempest.api.compute.admin.test_auto_allocate_network.AutoAllocateNetworkTest) ... SKIPPED: Found shared networks: [{'id': '553ba868-4d0b-4806-a78c-e885b0f913a0', 'name': 'shared', 'tenant_id': '5010ef5af0d6450b9ff32118a342e672', 'admin_state_up': True, 'mtu': 1442, 'status': 'ACTIVE', 'subnets': ['184b6233-3705-4a38-929b-081cc3054537'], 'shared': True, 'availability_zone_hints': [], 'availability_zones': [], 'ipv4_address_scope': None, 'ipv6_address_scope': None, 'router:external': False, 'description': '', 'port_security_enabled': True, 'tags': [], 'created_at': '2022-04-01T07:17:57Z', 'updated_at': '2022-04-01T07:17:58Z', 'revision_number': 2, 'project_id': '5010ef5af0d6450b9ff32118a342e672'}]
+{37} tempest.api.compute.admin.test_hosts_negative.HostsAdminNegativeTestJSON.test_show_host_detail_with_non_admin_user [0.033050s] ... ok
+{26} tempest.api.compute.admin.test_hypervisor_negative.HypervisorAdminNegativeUnderV252Test.test_show_servers_with_non_admin_user [0.086914s] ... ok
+{22} tempest.api.compute.admin.test_flavors_extra_specs.FlavorsExtraSpecsTestJSON.test_flavor_non_admin_get_specific_key [0.117420s] ... ok
+{37} tempest.api.compute.admin.test_hosts_negative.HostsAdminNegativeTestJSON.test_show_host_detail_with_nonexistent_hostname [0.033041s] ... ok
+{26} tempest.api.compute.admin.test_hypervisor_negative.HypervisorAdminNegativeUnderV252Test.test_show_servers_with_nonexistent_hypervisor [0.038390s] ... ok
+{35} tempest.api.compute.admin.test_flavors_extra_specs_negative.FlavorsExtraSpecsNegativeTestJSON.test_flavor_non_admin_update_specific_key [0.059720s] ... ok
+{37} tempest.api.compute.admin.test_hosts_negative.HostsAdminNegativeTestJSON.test_shutdown_host_with_non_admin_user [0.023435s] ... ok
+{35} tempest.api.compute.admin.test_flavors_extra_specs_negative.FlavorsExtraSpecsNegativeTestJSON.test_flavor_unset_nonexistent_key [0.018869s] ... ok
+{27} tempest.api.compute.admin.test_flavors.FlavorsAdminTestJSON.test_create_flavor_verify_entry_in_list_details [0.185410s] ... ok
+{35} tempest.api.compute.admin.test_flavors_extra_specs_negative.FlavorsExtraSpecsNegativeTestJSON.test_flavor_update_mismatch_key [0.011077s] ... ok
+{37} tempest.api.compute.admin.test_hosts_negative.HostsAdminNegativeTestJSON.test_shutdown_nonexistent_host [0.029884s] ... ok
+{35} tempest.api.compute.admin.test_flavors_extra_specs_negative.FlavorsExtraSpecsNegativeTestJSON.test_flavor_update_more_key [0.010103s] ... ok
+{37} tempest.api.compute.admin.test_hosts_negative.HostsAdminNegativeTestJSON.test_startup_host_with_non_admin_user [0.013224s] ... ok
+{37} tempest.api.compute.admin.test_hosts_negative.HostsAdminNegativeTestJSON.test_startup_nonexistent_host [0.033766s] ... ok
+{37} tempest.api.compute.admin.test_hosts_negative.HostsAdminNegativeTestJSON.test_update_host_with_invalid_maintenance_mode [0.026311s] ... ok
+{27} tempest.api.compute.admin.test_flavors.FlavorsAdminTestJSON.test_create_flavor_with_int_id [0.107095s] ... ok
+{37} tempest.api.compute.admin.test_hosts_negative.HostsAdminNegativeTestJSON.test_update_host_with_invalid_status [0.026428s] ... ok
+{37} tempest.api.compute.admin.test_hosts_negative.HostsAdminNegativeTestJSON.test_update_host_with_non_admin_user [0.012715s] ... ok
+{37} tempest.api.compute.admin.test_hosts_negative.HostsAdminNegativeTestJSON.test_update_host_without_param [0.010709s] ... ok
+{22} tempest.api.compute.admin.test_flavors_extra_specs.FlavorsExtraSpecsTestJSON.test_flavor_set_get_update_show_unset_keys [0.213668s] ... ok
+{37} tempest.api.compute.admin.test_hosts_negative.HostsAdminNegativeTestJSON.test_update_nonexistent_host [0.043924s] ... ok
+{27} tempest.api.compute.admin.test_flavors.FlavorsAdminTestJSON.test_create_flavor_with_none_id [0.075827s] ... ok
+{24} tempest.api.compute.admin.test_networks.NetworksTest.test_get_network [1.455888s] ... ok
+{25} tempest.api.compute.admin.test_flavors_access.FlavorsAccessTestJSON.test_flavor_access_add_remove [1.438123s] ... ok
+{27} tempest.api.compute.admin.test_flavors.FlavorsAdminTestJSON.test_create_flavor_with_uuid_id [0.088098s] ... ok
+{39} tempest.api.compute.admin.test_flavors_access_negative.FlavorsAccessNegativeTestJSON.test_add_flavor_access_duplicate [0.982257s] ... ok
+{25} tempest.api.compute.admin.test_flavors_access.FlavorsAccessTestJSON.test_flavor_access_list_with_private_flavor [0.114919s] ... ok
+{39} tempest.api.compute.admin.test_flavors_access_negative.FlavorsAccessNegativeTestJSON.test_flavor_access_list_with_public_flavor [0.089094s] ... ok
+{27} tempest.api.compute.admin.test_flavors.FlavorsAdminTestJSON.test_create_list_flavor_without_extra_data [0.333251s] ... ok
+{27} tempest.api.compute.admin.test_flavors.FlavorsAdminTestJSON.test_create_server_with_non_public_flavor [0.090444s] ... ok
+{39} tempest.api.compute.admin.test_flavors_access_negative.FlavorsAccessNegativeTestJSON.test_flavor_non_admin_add [0.266612s] ... ok
+{24} tempest.api.compute.admin.test_networks.NetworksTest.test_list_all_networks [0.566212s] ... ok
+{27} tempest.api.compute.admin.test_flavors.FlavorsAdminTestJSON.test_is_public_string_variations [0.384415s] ... ok
+{39} tempest.api.compute.admin.test_flavors_access_negative.FlavorsAccessNegativeTestJSON.test_flavor_non_admin_remove [0.428254s] ... ok
+{27} tempest.api.compute.admin.test_flavors.FlavorsAdminTestJSON.test_list_non_public_flavor [0.129104s] ... ok
+{27} tempest.api.compute.admin.test_flavors.FlavorsAdminTestJSON.test_list_public_flavor_with_other_user [0.111417s] ... ok
+{39} tempest.api.compute.admin.test_flavors_access_negative.FlavorsAccessNegativeTestJSON.test_remove_flavor_access_not_found [0.194186s] ... ok
+{21} setUpClass (tempest.api.compute.admin.test_fixed_ips.FixedIPsTestJson) ... SKIPPED: FixedIPsTestJson skipped as neutron is available
+{37} tempest.api.compute.admin.test_hypervisor.HypervisorAdminUnderV252Test.test_get_hypervisor_show_servers [0.318957s] ... ok
+{20} tempest.api.compute.admin.test_services_negative.ServicesAdminNegativeTestJSON.test_get_service_by_invalid_params [0.292086s] ... ok
+{37} tempest.api.compute.admin.test_hypervisor.HypervisorAdminUnderV252Test.test_search_hypervisor [0.086384s] ... ok
+{20} tempest.api.compute.admin.test_services_negative.ServicesAdminNegativeTestJSON.test_get_service_by_invalid_service_and_valid_host [0.075908s] ... ok
+{20} tempest.api.compute.admin.test_services_negative.ServicesAdminNegativeTestJSON.test_get_service_with_valid_service_and_invalid_host [0.075477s] ... ok
+{21} tempest.api.compute.admin.test_flavors_microversions.FlavorsV261TestJSON.test_crud_flavor [0.840057s] ... ok
+{20} tempest.api.compute.admin.test_services_negative.ServicesAdminNegativeTestJSON.test_list_services_with_non_admin_user [0.193777s] ... ok
+{35} tempest.api.compute.admin.test_hypervisor.HypervisorAdminTestJSON.test_get_hypervisor_list [0.239685s] ... ok
+{35} tempest.api.compute.admin.test_hypervisor.HypervisorAdminTestJSON.test_get_hypervisor_list_details [0.032944s] ... ok
+{35} tempest.api.compute.admin.test_hypervisor.HypervisorAdminTestJSON.test_get_hypervisor_show_details [0.074816s] ... ok
+{35} tempest.api.compute.admin.test_hypervisor.HypervisorAdminTestJSON.test_get_hypervisor_stats [0.026805s] ... ok
+{19} tempest.api.compute.admin.test_keypairs_v210.KeyPairsV210TestJSON.test_admin_manage_keypairs_for_other_users [0.849059s] ... ok
+{35} tempest.api.compute.admin.test_hypervisor.HypervisorAdminTestJSON.test_get_hypervisor_uptime [0.155886s] ... ok
+{26} tempest.api.compute.admin.test_instance_usage_audit_log.InstanceUsageAuditLogTestJSON.test_get_instance_usage_audit_log [0.145517s] ... ok
+{26} tempest.api.compute.admin.test_instance_usage_audit_log.InstanceUsageAuditLogTestJSON.test_list_instance_usage_audit_logs [0.030879s] ... ok
+{25} tempest.api.compute.admin.test_hypervisor.HypervisorAdminV228Test.test_get_list_hypervisor_details [0.263140s] ... ok
+{27} tempest.api.compute.admin.test_instance_usage_audit_log_negative.InstanceUsageAuditLogNegativeTestJSON.test_get_instance_usage_audit_logs_with_invalid_time [0.180004s] ... ok
+{27} tempest.api.compute.admin.test_instance_usage_audit_log_negative.InstanceUsageAuditLogNegativeTestJSON.test_instance_usage_audit_logs_with_nonadmin_user [0.110876s] ... ok
+{24} tempest.api.compute.admin.test_quotas.QuotasAdminTestV236.test_get_updated_quotas [2.036800s] ... ok
+{20} setUpClass (tempest.api.compute.admin.test_volume_swap.TestMultiAttachVolumeSwap) ... SKIPPED: Volume multi-attach is not available.
+{26} setUpClass (tempest.api.compute.admin.test_live_migration.LiveMigrationRemoteConsolesV26Test) ... SKIPPED: LiveMigrationRemoteConsolesV26Test skipped as live-migration is not available
+{22} setUpClass (tempest.api.compute.admin.test_floating_ips_bulk.FloatingIPsBulkAdminTestJSON) ... SKIPPED: nova-network is gone
+{20} tempest.api.compute.images.test_image_metadata_negative.ImagesMetadataNegativeTestJSON.test_delete_nonexistent_image_metadata_item [0.137665s] ... ok
+{20} tempest.api.compute.images.test_image_metadata_negative.ImagesMetadataNegativeTestJSON.test_get_nonexistent_image_metadata_item [0.030777s] ... ok
+{20} tempest.api.compute.images.test_image_metadata_negative.ImagesMetadataNegativeTestJSON.test_list_nonexistent_image_metadata [0.028266s] ... ok
+{20} tempest.api.compute.images.test_image_metadata_negative.ImagesMetadataNegativeTestJSON.test_set_nonexistent_image_metadata [0.032803s] ... ok
+{20} tempest.api.compute.images.test_image_metadata_negative.ImagesMetadataNegativeTestJSON.test_set_nonexistent_image_metadata_item [0.040401s] ... ok
+{20} tempest.api.compute.images.test_image_metadata_negative.ImagesMetadataNegativeTestJSON.test_update_nonexistent_image_metadata [0.090788s] ... ok
+{35} tempest.api.compute.images.test_list_images.ListImagesTestJSON.test_get_image [0.225926s] ... ok
+{35} tempest.api.compute.images.test_list_images.ListImagesTestJSON.test_list_images [0.074059s] ... ok
+{35} tempest.api.compute.images.test_list_images.ListImagesTestJSON.test_list_images_with_detail [0.074064s] ... ok
+{25} tempest.api.compute.admin.test_hypervisor_negative.HypervisorAdminNegativeTestJSON.test_get_hypervisor_list_details_with_non_admin_user [0.204301s] ... ok
+{25} tempest.api.compute.admin.test_hypervisor_negative.HypervisorAdminNegativeTestJSON.test_get_hypervisor_list_with_non_admin_user [0.010438s] ... ok
+{25} tempest.api.compute.admin.test_hypervisor_negative.HypervisorAdminNegativeTestJSON.test_get_hypervisor_stats_with_non_admin_user [0.011688s] ... ok
+{29} tempest.api.compute.servers.test_server_actions.ServersAaction247Test.test_create_backup [10.329327s] ... ok
+{25} tempest.api.compute.admin.test_hypervisor_negative.HypervisorAdminNegativeTestJSON.test_get_hypervisor_uptime_with_non_admin_user [0.177186s] ... ok
+{25} tempest.api.compute.admin.test_hypervisor_negative.HypervisorAdminNegativeTestJSON.test_get_nonexistent_hypervisor_uptime [0.009408s] ... ok
+{25} tempest.api.compute.admin.test_hypervisor_negative.HypervisorAdminNegativeTestJSON.test_show_hypervisor_with_non_admin_user [0.050574s] ... ok
+{25} tempest.api.compute.admin.test_hypervisor_negative.HypervisorAdminNegativeTestJSON.test_show_nonexistent_hypervisor [0.011605s] ... ok
+{21} tempest.api.compute.admin.test_quotas_negative.QuotasAdminNegativeTest.test_create_server_when_cpu_quota_is_full [1.431417s] ... ok
+{24} setUpClass (tempest.api.compute.certificates.test_certificates.CertificatesV2TestJSON) ... SKIPPED: Nova cert is not available
+{19} tempest.api.compute.admin.test_quotas.QuotaClassesAdminTestJSON.test_update_default_quotas [0.317966s] ... ok
+{20} tempest.api.compute.keypairs.test_keypairs.KeyPairsV2TestJSON.test_get_keypair_detail [0.442388s] ... ok
+{21} tempest.api.compute.admin.test_quotas_negative.QuotasAdminNegativeTest.test_create_server_when_instances_quota_is_full [1.043985s] ... ok
+{20} tempest.api.compute.keypairs.test_keypairs.KeyPairsV2TestJSON.test_keypair_create_delete [0.220942s] ... ok
+{20} tempest.api.compute.keypairs.test_keypairs.KeyPairsV2TestJSON.test_keypair_create_with_pub_key [0.076907s] ... ok
+{25} setUpClass (tempest.api.compute.admin.test_live_migration_negative.LiveMigrationNegativeTest) ... SKIPPED: Live migration is not enabled
+{20} tempest.api.compute.keypairs.test_keypairs.KeyPairsV2TestJSON.test_keypairs_create_list_delete [0.591145s] ... ok
+{21} tempest.api.compute.admin.test_quotas_negative.QuotasAdminNegativeTest.test_create_server_when_memory_quota_is_full [1.259723s] ... ok
+{21} tempest.api.compute.admin.test_quotas_negative.QuotasAdminNegativeTest.test_update_quota_normal_user [0.011742s] ... ok
+{25} tempest.api.compute.admin.test_migrations.MigrationsAdminTest.test_cold_migration ... SKIPPED: Less than 2 compute nodes, skipping multinode tests.
+{25} tempest.api.compute.admin.test_migrations.MigrationsAdminTest.test_list_migrations [0.189695s] ... ok
+{20} tempest.api.compute.keypairs.test_keypairs_v22.KeyPairsV22TestJSON.test_get_keypair_detail [0.404470s] ... ok
+{20} tempest.api.compute.keypairs.test_keypairs_v22.KeyPairsV22TestJSON.test_keypair_create_delete [0.222786s] ... ok
+{20} tempest.api.compute.keypairs.test_keypairs_v22.KeyPairsV22TestJSON.test_keypair_create_with_pub_key [0.057465s] ... ok
+{19} tempest.api.compute.admin.test_quotas.QuotasAdminTestV257.test_get_updated_quotas [1.272312s] ... ok
+{20} tempest.api.compute.keypairs.test_keypairs_v22.KeyPairsV22TestJSON.test_keypairs_create_list_delete [0.692539s] ... ok
+{20} tempest.api.compute.keypairs.test_keypairs_v22.KeyPairsV22TestJSON.test_keypairsv22_create_list_show [0.331302s] ... ok
+{20} tempest.api.compute.keypairs.test_keypairs_v22.KeyPairsV22TestJSON.test_keypairsv22_create_list_show_with_type [0.222131s] ... ok
+{21} tempest.api.compute.flavors.test_flavors_negative.FlavorsV2NegativeTest.test_boot_with_low_ram [2.937639s] ... ok
+{12} tempest.api.compute.servers.test_servers.ServersTestJSON.test_create_server_specify_multibyte_character_name [15.368709s] ... ok
+{32} tempest.api.compute.admin.test_server_diagnostics.ServerDiagnosticsV248Test.test_get_server_diagnostics [17.935256s] ... ok
+{12} tempest.api.compute.servers.test_servers.ServersTestJSON.test_create_server_with_admin_password [1.468858s] ... ok
+{21} tempest.api.compute.keypairs.test_keypairs_negative.KeyPairsNegativeTestJSON.test_create_keypair_invalid_name [0.140723s] ... ok
+{21} tempest.api.compute.keypairs.test_keypairs_negative.KeyPairsNegativeTestJSON.test_create_keypair_when_public_key_bits_exceeds_maximum [0.045652s] ... ok
+{21} tempest.api.compute.keypairs.test_keypairs_negative.KeyPairsNegativeTestJSON.test_create_keypair_with_duplicate_name [0.314309s] ... ok
+{21} tempest.api.compute.keypairs.test_keypairs_negative.KeyPairsNegativeTestJSON.test_create_keypair_with_empty_name_string [0.010552s] ... ok
+{21} tempest.api.compute.keypairs.test_keypairs_negative.KeyPairsNegativeTestJSON.test_create_keypair_with_empty_public_key [0.036900s] ... ok
+{21} tempest.api.compute.keypairs.test_keypairs_negative.KeyPairsNegativeTestJSON.test_create_keypair_with_long_keynames [0.010994s] ... ok
+{21} tempest.api.compute.keypairs.test_keypairs_negative.KeyPairsNegativeTestJSON.test_keypair_create_with_invalid_pub_key [0.075056s] ... ok
+{21} tempest.api.compute.keypairs.test_keypairs_negative.KeyPairsNegativeTestJSON.test_keypair_delete_nonexistent_key [0.022021s] ... ok
+{18} tempest.api.compute.floating_ips.test_floating_ips_actions_negative.FloatingIPsNegativeTestJSON.test_allocate_floating_ip_from_nonexistent_pool [0.077594s] ... ok
+{18} tempest.api.compute.floating_ips.test_floating_ips_actions_negative.FloatingIPsNegativeTestJSON.test_delete_nonexistent_floating_ip [0.119050s] ... ok
+{31} tempest.api.compute.admin.test_aggregates.AggregatesAdminTestJSON.test_aggregate_add_host_create_server_with_az [21.577435s] ... ok
+{31} tempest.api.compute.admin.test_aggregates.AggregatesAdminTestJSON.test_aggregate_add_host_get_details [0.583427s] ... ok
+{31} tempest.api.compute.admin.test_aggregates.AggregatesAdminTestJSON.test_aggregate_add_host_list [0.308205s] ... ok
+{16} tempest.scenario.test_shelve_instance.TestShelveInstance.test_cold_migrate_unshelved_instance ... SKIPPED: Less than 2 compute nodes, skipping multinode tests.
+{31} tempest.api.compute.admin.test_aggregates.AggregatesAdminTestJSON.test_aggregate_add_remove_host [0.525321s] ... ok
+{31} tempest.api.compute.admin.test_aggregates.AggregatesAdminTestJSON.test_aggregate_create_delete [0.085730s] ... ok
+{31} tempest.api.compute.admin.test_aggregates.AggregatesAdminTestJSON.test_aggregate_create_delete_with_az [0.137849s] ... ok
+{30} tempest.api.compute.admin.test_aggregates_negative.AggregatesAdminNegativeTestJSON.test_aggregate_add_existent_host [23.329144s] ... ok
+{31} tempest.api.compute.admin.test_aggregates.AggregatesAdminTestJSON.test_aggregate_create_update_metadata_get_details [0.145909s] ... ok
+{30} tempest.api.compute.admin.test_aggregates_negative.AggregatesAdminNegativeTestJSON.test_aggregate_add_host_as_user [0.210507s] ... ok
+{31} tempest.api.compute.admin.test_aggregates.AggregatesAdminTestJSON.test_aggregate_create_update_with_az [0.262597s] ... ok
+{30} tempest.api.compute.admin.test_aggregates_negative.AggregatesAdminNegativeTestJSON.test_aggregate_add_non_exist_host [0.103480s] ... ok
+{30} tempest.api.compute.admin.test_aggregates_negative.AggregatesAdminNegativeTestJSON.test_aggregate_create_aggregate_name_length_exceeds_255 [0.011067s] ... ok
+{30} tempest.api.compute.admin.test_aggregates_negative.AggregatesAdminNegativeTestJSON.test_aggregate_create_aggregate_name_length_less_than_1 [0.009826s] ... ok
+{30} tempest.api.compute.admin.test_aggregates_negative.AggregatesAdminNegativeTestJSON.test_aggregate_create_as_user [0.015443s] ... ok
+{31} tempest.api.compute.admin.test_aggregates.AggregatesAdminTestJSON.test_aggregate_create_verify_entry_in_list [0.085426s] ... ok
+{30} tempest.api.compute.admin.test_aggregates_negative.AggregatesAdminNegativeTestJSON.test_aggregate_create_with_existent_aggregate_name [0.078412s] ... ok
+{30} tempest.api.compute.admin.test_aggregates_negative.AggregatesAdminNegativeTestJSON.test_aggregate_delete_as_user [0.073270s] ... ok
+{28} tempest.api.compute.images.test_images_oneserver.ImagesOneServerTestJSON.test_create_delete_image [7.830878s] ... ok
+{30} tempest.api.compute.admin.test_aggregates_negative.AggregatesAdminNegativeTestJSON.test_aggregate_delete_with_invalid_id [0.023133s] ... ok
+{30} tempest.api.compute.admin.test_aggregates_negative.AggregatesAdminNegativeTestJSON.test_aggregate_get_details_as_user [0.070673s] ... ok
+{30} tempest.api.compute.admin.test_aggregates_negative.AggregatesAdminNegativeTestJSON.test_aggregate_get_details_with_invalid_id [0.015148s] ... ok
+{30} tempest.api.compute.admin.test_aggregates_negative.AggregatesAdminNegativeTestJSON.test_aggregate_list_as_user [0.013204s] ... ok
+{33} tempest.api.compute.admin.test_aggregates.AggregatesAdminTestV241.test_create_update_show_aggregate_add_remove_host [24.069449s] ... ok
+{30} tempest.api.compute.admin.test_aggregates_negative.AggregatesAdminNegativeTestJSON.test_aggregate_remove_host_as_user [0.420534s] ... ok
+{30} tempest.api.compute.admin.test_aggregates_negative.AggregatesAdminNegativeTestJSON.test_aggregate_remove_nonexistent_host [0.087755s] ... ok
+{39} tempest.api.compute.admin.test_servers_negative.ServersAdminNegativeTestJSON.test_migrate_non_existent_server [0.204768s] ... ok
+{14} tempest.api.compute.servers.test_disk_config.ServerDiskConfigTestJSON.test_rebuild_server_with_auto_disk_config [24.905358s] ... ok
+{33} tempest.api.compute.admin.test_quotas.QuotaClassesAdmin257Test.test_update_default_quotas [0.294021s] ... ok
+{37} tempest.api.compute.admin.test_security_groups.SecurityGroupsTestAdminJSON.test_list_security_groups_list_all_tenants_filter [19.850221s] ... ok
+{33} tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_get_flavor [0.198082s] ... ok
+{33} tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors [0.048683s] ... ok
+{33} tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors_detailed_filter_by_min_disk [0.052508s] ... ok
+{33} tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors_detailed_filter_by_min_ram [0.056366s] ... ok
+{33} tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors_detailed_limit_results [0.019393s] ... ok
+{33} tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors_detailed_using_marker [0.074347s] ... ok
+{33} tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors_filter_by_min_disk [0.051027s] ... ok
+{33} tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors_filter_by_min_ram [0.061094s] ... ok
+{33} tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors_limit_results [0.014623s] ... ok
+{33} tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors_using_marker [0.055978s] ... ok
+{33} tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors_with_detail [0.050454s] ... ok
+{27} tempest.api.compute.admin.test_simple_tenant_usage.TenantUsagesTestJSON.test_get_usage_tenant [0.254049s] ... ok
+{27} tempest.api.compute.admin.test_simple_tenant_usage.TenantUsagesTestJSON.test_get_usage_tenant_with_non_admin_user [0.055880s] ... ok
+{28} tempest.api.compute.images.test_images_oneserver.ImagesOneServerTestJSON.test_create_image_specify_multibyte_character_image_name [7.899793s] ... ok
+{27} tempest.api.compute.admin.test_simple_tenant_usage.TenantUsagesTestJSON.test_list_usage_all_tenants [1.345258s] ... ok
+{4} tempest.api.volume.test_volumes_snapshots.VolumesSnapshotTestJSON.test_snapshot_backup ... SKIPPED: Cinder backup is disabled
+{38} tempest.api.compute.admin.test_delete_server.DeleteServersAdminTestJSON.test_admin_delete_servers_of_others [34.598713s] ... ok
+{8} tempest.api.compute.servers.test_delete_server.DeleteServersTestJSON.test_delete_active_server [34.732831s] ... ok
+{29} tempest.api.compute.servers.test_servers_microversions.ServerShowV257Test.test_rebuild_server [24.653765s] ... ok
+{12} tempest.api.compute.servers.test_servers.ServersTestJSON.test_create_server_with_ipv6_addr_only [23.221999s] ... ok
+{2} tempest.api.compute.servers.test_server_actions.ServerActionsTestJSON.test_change_server_password ... SKIPPED: Change password not available.
+{19} tempest.api.compute.images.test_images.ImagesTestJSON.test_create_image_from_paused_server [32.649471s] ... ok
+{27} tempest.api.compute.floating_ips.test_floating_ips_actions.FloatingIPsTestJSON.test_allocate_floating_ip [3.146293s] ... ok
+{29} setUpClass (tempest.api.compute.servers.test_virtual_interfaces.VirtualInterfacesTestJSON) ... SKIPPED: nova-network is gone
+{27} tempest.api.compute.floating_ips.test_floating_ips_actions.FloatingIPsTestJSON.test_delete_floating_ip [1.830072s] ... ok
+{36} tempest.api.volume.admin.test_group_snapshots.GroupSnapshotsV319Test.test_reset_group_snapshot_status [55.516543s] ... ok
+{25} tempest.api.compute.admin.test_migrations.MigrationsAdminTest.test_list_migrations_in_flavor_resize_situation [45.001841s] ... ok
+{31} tempest.api.compute.admin.test_server_diagnostics.ServerDiagnosticsTest.test_get_server_diagnostics [33.428330s] ... ok
+{27} tempest.api.compute.servers.test_server_group.ServerGroupTestJSON.test_create_delete_multiple_server_groups_with_same_name_policy [0.409727s] ... ok
+{27} tempest.api.compute.servers.test_server_group.ServerGroupTestJSON.test_create_delete_server_group_with_affinity_policy [0.117126s] ... ok
+{27} tempest.api.compute.servers.test_server_group.ServerGroupTestJSON.test_create_delete_server_group_with_anti_affinity_policy [0.111672s] ... ok
+{39} tempest.api.compute.admin.test_servers_negative.ServersAdminNegativeTestJSON.test_migrate_server_invalid_state [35.592088s] ... ok
+{39} tempest.api.compute.admin.test_servers_negative.ServersAdminNegativeTestJSON.test_reset_state_server_invalid_state [0.012334s] ... ok
+{39} tempest.api.compute.admin.test_servers_negative.ServersAdminNegativeTestJSON.test_reset_state_server_invalid_type [0.012075s] ... ok
+{39} tempest.api.compute.admin.test_servers_negative.ServersAdminNegativeTestJSON.test_reset_state_server_nonexistent_server [0.011625s] ... ok
+{39} tempest.api.compute.admin.test_servers_negative.ServersAdminNegativeTestJSON.test_resize_server_using_overlimit_ram [0.278120s] ... ok
+{39} tempest.api.compute.admin.test_servers_negative.ServersAdminNegativeTestJSON.test_resize_server_using_overlimit_vcpus [0.269688s] ... ok
+{29} tempest.api.volume.admin.test_groups.GroupsTest.test_group_create_show_list_delete [16.230306s] ... ok
+{32} tempest.api.compute.admin.test_server_diagnostics_negative.ServerDiagnosticsNegativeTest.test_get_server_diagnostics_by_non_admin [42.473314s] ... ok
+{21} tempest.api.compute.servers.test_create_server.ServersTestManualDisk.test_host_name_is_same_as_server_name [1.027828s] ... ok
+{21} tempest.api.compute.servers.test_create_server.ServersTestManualDisk.test_list_servers [0.119765s] ... ok
+{21} tempest.api.compute.servers.test_create_server.ServersTestManualDisk.test_list_servers_with_detail [0.225789s] ... ok
+{21} tempest.api.compute.servers.test_create_server.ServersTestManualDisk.test_verify_created_server_vcpus [0.048236s] ... ok
+{21} tempest.api.compute.servers.test_create_server.ServersTestManualDisk.test_verify_server_details [0.000616s] ... ok
+{36} tempest.api.volume.admin.test_volume_manage.VolumeManageAdminTest.test_unmanage_manage_volume [14.691082s] ... ok
+{6} tempest.scenario.test_network_advanced_server_ops.TestNetworkAdvancedServerOps.test_server_connectivity_pause_unpause [72.782019s] ... ok
+{11} tempest.api.compute.servers.test_server_rescue.ServerStableDeviceRescueTest.test_stable_device_rescue_disk_scsi [64.252530s] ... ok
+{22} tempest.api.compute.servers.test_attach_interfaces.AttachInterfacesUnderV243Test.test_add_remove_fixed_ip [55.488993s] ... ok
+{30} tempest.api.compute.servers.test_create_server.ServersTestFqdnHostnames.test_create_server_with_fqdn_name [45.946603s] ... ok
+{14} tempest.api.compute.servers.test_disk_config.ServerDiskConfigTestJSON.test_rebuild_server_with_manual_disk_config [54.629423s] ... ok
+{21} tempest.api.compute.volumes.test_volumes_negative.VolumesNegativeTest.test_create_volume_with_invalid_size [0.124542s] ... ok
+{21} tempest.api.compute.volumes.test_volumes_negative.VolumesNegativeTest.test_create_volume_with_size_zero [0.010164s] ... ok
+{21} tempest.api.compute.volumes.test_volumes_negative.VolumesNegativeTest.test_create_volume_without_passing_size [0.009637s] ... ok
+{21} tempest.api.compute.volumes.test_volumes_negative.VolumesNegativeTest.test_delete_invalid_volume_id [0.038463s] ... ok
+{21} tempest.api.compute.volumes.test_volumes_negative.VolumesNegativeTest.test_delete_volume_without_passing_volume_id [0.010178s] ... ok
+{21} tempest.api.compute.volumes.test_volumes_negative.VolumesNegativeTest.test_get_volume_without_passing_volume_id [0.007890s] ... ok
+{21} tempest.api.compute.volumes.test_volumes_negative.VolumesNegativeTest.test_volume_delete_nonexistent_volume_id [0.040073s] ... ok
+{21} tempest.api.compute.volumes.test_volumes_negative.VolumesNegativeTest.test_volume_get_nonexistent_volume_id [0.024595s] ... ok
+{21} tempest.api.volume.admin.test_volume_services_negative.VolumeServicesNegativeTest.test_disable_log_reason_with_no_reason [0.013146s] ... ok
+{21} tempest.api.volume.admin.test_volume_services_negative.VolumeServicesNegativeTest.test_disable_service_with_invalid_binary [0.017920s] ... ok
+{21} tempest.api.volume.admin.test_volume_services_negative.VolumeServicesNegativeTest.test_enable_service_with_invalid_host [0.021855s] ... ok
+{21} tempest.api.volume.admin.test_volume_services_negative.VolumeServicesNegativeTest.test_freeze_host_with_invalid_host [0.022794s] ... ok
+{21} tempest.api.volume.admin.test_volume_services_negative.VolumeServicesNegativeTest.test_thaw_host_with_invalid_host [0.021198s] ... ok
+{38} tempest.api.compute.admin.test_delete_server.DeleteServersAdminTestJSON.test_delete_server_while_in_error_state [52.286453s] ... ok
+{20} tempest.api.compute.servers.test_server_rescue_negative.ServerRescueNegativeTestJSON.test_rescue_non_existent_server [0.015114s] ... ok
+{2} tempest.api.compute.servers.test_server_actions.ServerActionsTestJSON.test_create_backup [43.910026s] ... ok
+{18} tempest.api.compute.servers.test_create_server.ServersTestJSON.test_host_name_is_same_as_server_name [1.039561s] ... ok
+{18} tempest.api.compute.servers.test_create_server.ServersTestJSON.test_list_servers [0.145482s] ... ok
+{39} tempest.api.compute.servers.test_availability_zone.AZV2TestJSON.test_get_availability_zone_list_with_non_admin_user [0.201719s] ... ok
+{38} tempest.api.compute.admin.test_flavors_microversions.FlavorsV255TestJSON.test_crud_flavor [0.343561s] ... ok
+{18} tempest.api.compute.servers.test_create_server.ServersTestJSON.test_list_servers_with_detail [0.263032s] ... ok
+{18} tempest.api.compute.servers.test_create_server.ServersTestJSON.test_verify_created_server_vcpus [0.052400s] ... ok
+{18} tempest.api.compute.servers.test_create_server.ServersTestJSON.test_verify_server_details [0.000502s] ... ok
+{38} tempest.api.compute.admin.test_hosts.HostsAdminTestJSON.test_list_hosts [0.140532s] ... ok
+{38} tempest.api.compute.admin.test_hosts.HostsAdminTestJSON.test_list_hosts_with_a_blank_zone [0.032207s] ... ok
+{38} tempest.api.compute.admin.test_hosts.HostsAdminTestJSON.test_list_hosts_with_nonexistent_zone [0.034783s] ... ok
+{38} tempest.api.compute.admin.test_hosts.HostsAdminTestJSON.test_list_hosts_with_zone [0.067359s] ... ok
+{38} tempest.api.compute.admin.test_hosts.HostsAdminTestJSON.test_show_host_detail [0.300984s] ... ok
+{20} tempest.api.compute.servers.test_server_rescue_negative.ServerRescueNegativeTestJSON.test_rescue_paused_instance [7.553796s] ... ok
+{38} tempest.api.compute.admin.test_services.ServicesAdminTestJSON.test_get_service_by_host_name [0.200878s] ... ok
+{38} tempest.api.compute.admin.test_services.ServicesAdminTestJSON.test_get_service_by_service_binary_name [0.026915s] ... ok
+{38} tempest.api.compute.admin.test_services.ServicesAdminTestJSON.test_list_services [0.033434s] ... ok
+{10} tempest.api.compute.servers.test_attach_interfaces.AttachInterfacesTestJSON.test_create_list_show_delete_interfaces_by_fixed_ip [82.207673s] ... ok
+{33} tempest.api.compute.floating_ips.test_floating_ips_actions_negative.FloatingIPsAssociationNegativeTestJSON.test_associate_ip_to_server_with_floating_ip [8.354475s] ... ok
+{33} tempest.api.compute.floating_ips.test_floating_ips_actions_negative.FloatingIPsAssociationNegativeTestJSON.test_associate_ip_to_server_without_passing_floating_ip [0.011107s] ... ok
+{33} tempest.api.compute.floating_ips.test_floating_ips_actions_negative.FloatingIPsAssociationNegativeTestJSON.test_associate_nonexistent_floating_ip [0.193520s] ... ok
+{33} tempest.api.compute.floating_ips.test_floating_ips_actions_negative.FloatingIPsAssociationNegativeTestJSON.test_dissociate_nonexistent_floating_ip [0.061910s] ... ok
+{38} tempest.api.compute.admin.test_services_negative.ServicesAdminNegativeV253TestJSON.test_disable_log_reason_with_invalid_service_id [0.154203s] ... ok
+{38} tempest.api.compute.admin.test_services_negative.ServicesAdminNegativeV253TestJSON.test_disable_service_with_invalid_service_id [0.023807s] ... ok
+{38} tempest.api.compute.admin.test_services_negative.ServicesAdminNegativeV253TestJSON.test_enable_service_with_invalid_service_id [0.030184s] ... ok
+{38} tempest.api.compute.admin.test_services_negative.ServicesAdminNegativeV253TestJSON.test_get_service_by_invalid_params [0.059573s] ... ok
+{38} tempest.api.compute.admin.test_services_negative.ServicesAdminNegativeV253TestJSON.test_get_service_by_invalid_service_and_valid_host [0.063916s] ... ok
+{38} tempest.api.compute.admin.test_services_negative.ServicesAdminNegativeV253TestJSON.test_get_service_with_valid_service_and_invalid_host [0.063163s] ... ok
+{38} tempest.api.compute.admin.test_services_negative.ServicesAdminNegativeV253TestJSON.test_list_services_with_non_admin_user [0.132949s] ... ok
+{38} tempest.api.compute.limits.test_absolute_limits_negative.AbsoluteLimitsNegativeTestJSON.test_max_metadata_exceed_limit [0.595291s] ... ok
+{24} tempest.api.compute.floating_ips.test_floating_ips_actions.FloatingIPsAssociationTestJSON.test_associate_already_associated_floating_ip [56.372158s] ... ok
+{24} tempest.api.compute.floating_ips.test_floating_ips_actions.FloatingIPsAssociationTestJSON.test_associate_disassociate_floating_ip [2.315490s] ... ok
+{18} tempest.api.compute.servers.test_server_group.ServerGroup264TestJSON.test_create_get_server_group [0.253471s] ... ok
+{29} tempest.api.volume.admin.test_groups.GroupsTest.test_group_update [37.319804s] ... ok
+{12} tempest.api.compute.servers.test_servers.ServersTestJSON.test_create_specify_keypair [69.116528s] ... ok
+{2} tempest.api.compute.servers.test_server_actions.ServerActionsTestJSON.test_get_console_output [22.762809s] ... ok
+{8} tempest.api.compute.servers.test_delete_server.DeleteServersTestJSON.test_delete_server_while_in_attached_volume [76.873243s] ... ok
+{28} tempest.api.compute.servers.test_servers_microversions.ServerShowV254Test.test_rebuild_server [70.159372s] ... ok
+{8} tempest.api.compute.servers.test_delete_server.DeleteServersTestJSON.test_delete_server_while_in_building_state [0.795211s] ... ok
+{16} tempest.scenario.test_shelve_instance.TestShelveInstance.test_shelve_instance [92.249751s] ... ok
+{28} tempest.api.compute.test_versions.TestVersions.test_get_version_details [0.023562s] ... ok
+{28} tempest.api.compute.test_versions.TestVersions.test_list_api_versions [0.006201s] ... ok
+{37} tempest.api.compute.admin.test_servers.ServersAdminTestJSON.test_create_server_with_scheduling_hint [44.112147s] ... ok
+{37} tempest.api.compute.admin.test_servers.ServersAdminTestJSON.test_list_servers_by_admin [0.242593s] ... ok
+{37} tempest.api.compute.admin.test_servers.ServersAdminTestJSON.test_list_servers_by_admin_with_all_tenants [0.636142s] ... ok
+{37} tempest.api.compute.admin.test_servers.ServersAdminTestJSON.test_list_servers_by_admin_with_specified_tenant [0.388787s] ... ok
+{28} tempest.api.volume.admin.test_volume_quotas.VolumeQuotasAdminTestJSON.test_delete_quota [0.335609s] ... ok
+{37} tempest.api.compute.admin.test_servers.ServersAdminTestJSON.test_list_servers_detailed_filter_by_invalid_status [0.023230s] ... ok
+{28} tempest.api.volume.admin.test_volume_quotas.VolumeQuotasAdminTestJSON.test_list_default_quotas [0.039262s] ... ok
+{28} tempest.api.volume.admin.test_volume_quotas.VolumeQuotasAdminTestJSON.test_list_quotas [0.036963s] ... ok
+{37} tempest.api.compute.admin.test_servers.ServersAdminTestJSON.test_list_servers_filter_by_error_status [0.363982s] ... ok
+{37} tempest.api.compute.admin.test_servers.ServersAdminTestJSON.test_list_servers_filter_by_exist_host [0.356109s] ... ok
+{19} tempest.api.compute.images.test_images.ImagesTestJSON.test_create_image_from_stopped_server [71.897411s] ... ok
+{5} tempest.scenario.test_volume_boot_pattern.TestVolumeBootPattern.test_boot_server_from_encrypted_volume_luks [102.705300s] ... ok
+{34} tempest.api.compute.admin.test_create_server.ServersWithSpecificFlavorTestJSON.test_verify_created_server_ephemeral_disk [107.503359s] ... ok
+{31} tempest.api.compute.images.test_images_oneserver_negative.ImagesOneServerNegativeTestJSON.test_create_image_specify_invalid_metadata [0.462087s] ... ok
+{27} tempest.api.compute.servers.test_server_group.ServerGroupTestJSON.test_create_server_with_scheduler_hint_group [69.343937s] ... ok
+{27} tempest.api.compute.servers.test_server_group.ServerGroupTestJSON.test_list_server_groups [0.043698s] ... ok
+{27} tempest.api.compute.servers.test_server_group.ServerGroupTestJSON.test_show_server_group [0.024749s] ... ok
+{31} tempest.api.compute.images.test_images_oneserver_negative.ImagesOneServerNegativeTestJSON.test_create_image_specify_metadata_over_limits [0.852402s] ... ok
+{31} tempest.api.compute.images.test_images_oneserver_negative.ImagesOneServerNegativeTestJSON.test_create_image_specify_name_over_character_limit [0.316409s] ... ok
+{34} tempest.api.compute.admin.test_hypervisor.HypervisorAdminV253TestBase.test_list_show_detail_hypervisors [0.395925s] ... ok
+{20} tempest.api.compute.servers.test_server_rescue_negative.ServerRescueNegativeTestJSON.test_rescued_vm_attach_volume [41.462158s] ... ok
+{3} tempest.scenario.test_security_groups_basic_ops.TestSecurityGroupsBasicOps.test_boot_into_disabled_port_security_network_without_secgroup [136.238738s] ... ok
+{29} tempest.api.volume.test_volumes_get.VolumesGetTest.test_volume_create_get_update_delete [27.941195s] ... ok
+{28} tempest.api.volume.admin.test_volume_quotas.VolumeQuotasAdminTestJSON.test_quota_usage [13.957357s] ... ok
+{39} tempest.api.compute.servers.test_multiple_create.MultipleCreateTestJSON.test_multiple_create [46.490366s] ... ok
+{34} tempest.api.compute.admin.test_simple_tenant_usage_negative.TenantUsagesNegativeTestJSON.test_get_usage_tenant_with_empty_tenant_id [0.140809s] ... ok
+{34} tempest.api.compute.admin.test_simple_tenant_usage_negative.TenantUsagesNegativeTestJSON.test_get_usage_tenant_with_invalid_date [0.014639s] ... ok
+{34} tempest.api.compute.admin.test_simple_tenant_usage_negative.TenantUsagesNegativeTestJSON.test_list_usage_all_tenants_with_non_admin_user [0.118411s] ... ok
+{24} tempest.api.compute.floating_ips.test_list_floating_ips.FloatingIPDetailsTestJSON.test_get_floating_ip_details [1.723813s] ... ok
+{24} tempest.api.compute.floating_ips.test_list_floating_ips.FloatingIPDetailsTestJSON.test_list_floating_ip_pools [0.145583s] ... ok
+{24} tempest.api.compute.floating_ips.test_list_floating_ips.FloatingIPDetailsTestJSON.test_list_floating_ips [0.179576s] ... ok
+{30} tempest.api.compute.servers.test_instance_actions.InstanceActionsTestJSON.test_get_instance_action [0.045555s] ... ok
+{17} tempest.api.compute.volumes.test_attach_volume.AttachVolumeShelveTestJSON.test_attach_volume_shelved_or_offload_server [135.975385s] ... ok
+{1} tempest.scenario.test_network_basic_ops.TestNetworkBasicOps.test_connectivity_between_vms_on_different_networks [150.632435s] ... ok
+{28} tempest.api.volume.admin.test_volume_quotas.VolumeQuotasAdminTestJSON.test_quota_usage_after_volume_transfer [14.753304s] ... ok
+{28} tempest.api.volume.admin.test_volume_quotas.VolumeQuotasAdminTestJSON.test_show_quota_usage [0.039273s] ... ok
+{24} tempest.api.compute.images.test_images_negative.ImagesDeleteNegativeTestJSON.test_delete_image_blank_id [0.143802s] ... ok
+{24} tempest.api.compute.images.test_images_negative.ImagesDeleteNegativeTestJSON.test_delete_image_negative_image_id [0.029741s] ... ok
+{24} tempest.api.compute.images.test_images_negative.ImagesDeleteNegativeTestJSON.test_delete_image_non_hex_string_id [0.028155s] ... ok
+{24} tempest.api.compute.images.test_images_negative.ImagesDeleteNegativeTestJSON.test_delete_image_with_id_over_character_limit [0.025337s] ... ok
+{24} tempest.api.compute.images.test_images_negative.ImagesDeleteNegativeTestJSON.test_delete_image_with_invalid_image_id [0.029010s] ... ok
+{28} tempest.api.volume.admin.test_volume_quotas.VolumeQuotasAdminTestJSON.test_update_all_quota_resources_for_tenant [0.233305s] ... ok
+{24} tempest.api.compute.images.test_images_negative.ImagesDeleteNegativeTestJSON.test_delete_non_existent_image [0.030661s] ... ok
+{21} tempest.api.volume.admin.test_volumes_actions.VolumesActionsTest.test_force_detach_volume [64.009126s] ... ok
+{24} tempest.api.compute.security_groups.test_security_group_rules_negative.SecurityGroupRulesNegativeTestJSON.test_create_security_group_rule_duplicate [0.877245s] ... ok
+{24} tempest.api.compute.security_groups.test_security_group_rules_negative.SecurityGroupRulesNegativeTestJSON.test_create_security_group_rule_with_invalid_from_port [0.264246s] ... ok
+{24} tempest.api.compute.security_groups.test_security_group_rules_negative.SecurityGroupRulesNegativeTestJSON.test_create_security_group_rule_with_invalid_id [0.009244s] ... ok
+{24} tempest.api.compute.security_groups.test_security_group_rules_negative.SecurityGroupRulesNegativeTestJSON.test_create_security_group_rule_with_invalid_ip_protocol [0.186276s] ... ok
+{24} tempest.api.compute.security_groups.test_security_group_rules_negative.SecurityGroupRulesNegativeTestJSON.test_create_security_group_rule_with_invalid_port_range [0.228387s] ... ok
+{24} tempest.api.compute.security_groups.test_security_group_rules_negative.SecurityGroupRulesNegativeTestJSON.test_create_security_group_rule_with_invalid_to_port [0.313034s] ... ok
+{24} tempest.api.compute.security_groups.test_security_group_rules_negative.SecurityGroupRulesNegativeTestJSON.test_create_security_group_rule_with_non_existent_id [0.033242s] ... ok
+{24} tempest.api.compute.security_groups.test_security_group_rules_negative.SecurityGroupRulesNegativeTestJSON.test_delete_security_group_rule_with_non_existent_id [0.032910s] ... ok
+{0} tempest.scenario.test_network_v6.TestGettingAddress.test_dhcp6_stateless_from_os [157.625111s] ... ok
+{11} tempest.api.compute.servers.test_server_rescue.ServerStableDeviceRescueTest.test_stable_device_rescue_disk_usb [86.217091s] ... ok
+{25} tempest.api.compute.admin.test_migrations.MigrationsAdminTest.test_resize_server_revert_deleted_flavor [105.921512s] ... ok
+{25} tempest.api.compute.admin.test_migrations.MigrationsAdminTest.test_revert_cold_migration ... SKIPPED: Less than 2 compute nodes, skipping multinode tests.
+{14} tempest.api.compute.servers.test_disk_config.ServerDiskConfigTestJSON.test_resize_server_from_auto_to_manual [86.985453s] ... ok
+{21} tempest.api.volume.admin.test_volumes_actions.VolumesActionsTest.test_volume_force_delete_when_volume_is_attaching [13.825639s] ... ok
+{26} tempest.api.compute.admin.test_volume_swap.TestVolumeSwap.test_volume_swap [155.923070s] ... ok
+{2} tempest.api.compute.servers.test_server_actions.ServerActionsTestJSON.test_get_console_output_server_id_in_shutoff_status [60.197519s] ... ok
+{27} tempest.api.volume.admin.test_snapshot_manage.SnapshotManageAdminTest.test_unmanage_manage_snapshot [43.195400s] ... ok
+{39} tempest.api.compute.servers.test_multiple_create.MultipleCreateTestJSON.test_multiple_create_with_reservation_return [39.098038s] ... ok
+{13} tempest.api.compute.servers.test_server_rescue.ServerBootFromVolumeStableRescueTest.test_stable_device_rescue_bfv_blank_volume [159.947004s] ... ok
+{27} tempest.api.volume.admin.test_volume_pools.VolumePoolsAdminTestsJSON.test_get_pools_with_details [0.149661s] ... ok
+{27} tempest.api.volume.admin.test_volume_pools.VolumePoolsAdminTestsJSON.test_get_pools_without_details [0.031722s] ... ok
+{30} tempest.api.compute.servers.test_instance_actions.InstanceActionsTestJSON.test_list_instance_actions [31.252683s] ... ok
+{18} tempest.api.compute.servers.test_server_rescue.ServerRescueTestJSONUnderV235.test_rescued_vm_add_remove_security_group [2.102813s] ... ok
+{21} tempest.api.volume.admin.test_volumes_actions.VolumesActionsTest.test_volume_force_delete_when_volume_is_creating [12.838063s] ... ok
+{27} tempest.api.volume.admin.test_volume_types_extra_specs.VolumeTypesExtraSpecsTest.test_volume_type_extra_spec_create_get_delete [0.190002s] ... ok
+{27} tempest.api.volume.admin.test_volume_types_extra_specs.VolumeTypesExtraSpecsTest.test_volume_type_extra_specs_list [0.100087s] ... ok
+{27} tempest.api.volume.admin.test_volume_types_extra_specs.VolumeTypesExtraSpecsTest.test_volume_type_extra_specs_update [0.255224s] ... ok
+{6} tempest.scenario.test_network_advanced_server_ops.TestNetworkAdvancedServerOps.test_server_connectivity_reboot [108.561110s] ... ok
+{33} tempest.api.compute.images.test_images_negative.ImagesNegativeTestJSON.test_create_image_from_deleted_server [66.120019s] ... ok
+{33} tempest.api.compute.images.test_images_negative.ImagesNegativeTestJSON.test_create_image_from_invalid_server [0.011513s] ... ok
+{33} tempest.api.compute.images.test_images_negative.ImagesNegativeTestJSON.test_create_image_specify_uuid_35_characters_or_less [0.014424s] ... ok
+{33} tempest.api.compute.images.test_images_negative.ImagesNegativeTestJSON.test_create_image_specify_uuid_37_characters_or_more [0.008569s] ... ok
+{18} tempest.api.compute.servers.test_server_rescue.ServerRescueTestJSONUnderV235.test_rescued_vm_associate_dissociate_floating_ip [4.201705s] ... ok
+{19} tempest.api.compute.images.test_images.ImagesTestJSON.test_create_image_from_suspended_server [59.633629s] ... ok
+{38} tempest.api.compute.servers.test_create_server_multi_nic.ServersTestMultiNic.test_verify_duplicate_network_nics [76.758890s] ... ok
+{37} tempest.api.compute.admin.test_servers.ServersAdminTestJSON.test_rebuild_server_in_error_state [59.818234s] ... ok
+{37} tempest.api.compute.admin.test_servers.ServersAdminTestJSON.test_reset_network_inject_network_info ... SKIPPED: The resetNetwork server action is not supported.
+{33} tempest.api.compute.limits.test_absolute_limits.AbsoluteLimitsTestJSON.test_absLimits_get [0.201288s] ... ok
+{27} tempest.api.volume.admin.test_volume_types_negative.VolumeTypesNegativeTest.test_create_volume_type_encryption_nonexistent_type_id [0.151058s] ... ok
+{27} tempest.api.volume.admin.test_volume_types_negative.VolumeTypesNegativeTest.test_create_volume_with_private_volume_type [0.200358s] ... ok
+{27} tempest.api.volume.admin.test_volume_types_negative.VolumeTypesNegativeTest.test_create_with_empty_name [0.010111s] ... ok
+{27} tempest.api.volume.admin.test_volume_types_negative.VolumeTypesNegativeTest.test_create_with_repeated_name [0.047703s] ... ok
+{27} tempest.api.volume.admin.test_volume_types_negative.VolumeTypesNegativeTest.test_delete_nonexistent_type_id [0.018606s] ... ok
+{27} tempest.api.volume.admin.test_volume_types_negative.VolumeTypesNegativeTest.test_get_nonexistent_type_id [0.013996s] ... ok
+{37} tempest.api.compute.admin.test_servers.ServersAdminTestJSON.test_reset_state_server [0.509403s] ... ok
+{8} tempest.api.compute.servers.test_delete_server.DeleteServersTestJSON.test_delete_server_while_in_pause_state [70.931748s] ... ok
+{33} tempest.api.volume.admin.test_backends_capabilities.BackendsCapabilitiesAdminTestsJSON.test_compare_volume_stats_values [0.068834s] ... ok
+{33} tempest.api.volume.admin.test_backends_capabilities.BackendsCapabilitiesAdminTestsJSON.test_get_capabilities_backend [0.027814s] ... ok
+{35} tempest.api.compute.servers.test_device_tagging.TaggedAttachmentsTest.test_tagged_attachment [152.462177s] ... ok
+{7} tempest.api.compute.volumes.test_attach_volume_negative.AttachVolumeNegativeTest.test_attach_attached_volume_to_different_server [173.948206s] ... ok
+{33} tempest.api.volume.admin.test_group_type_specs.GroupTypeSpecsTest.test_group_type_specs_create_show_update_list_delete [0.514379s] ... ok
+{31} tempest.api.compute.images.test_images_oneserver_negative.ImagesOneServerNegativeTestJSON.test_create_second_image_when_first_image_is_being_saved [59.936209s] ... ok
+{33} tempest.api.volume.test_volumes_snapshots_negative.VolumesSnapshotNegativeTestJSON.test_create_snapshot_with_nonexistent_volume_id [0.134603s] ... ok
+{33} tempest.api.volume.test_volumes_snapshots_negative.VolumesSnapshotNegativeTestJSON.test_create_snapshot_without_passing_volume_id [0.041897s] ... ok
+{33} tempest.api.volume.test_volumes_snapshots_negative.VolumesSnapshotNegativeTestJSON.test_list_snapshot_invalid_param_limit [0.013149s] ... ok
+{33} tempest.api.volume.test_volumes_snapshots_negative.VolumesSnapshotNegativeTestJSON.test_list_snapshots_invalid_param_marker [0.017388s] ... ok
+{33} tempest.api.volume.test_volumes_snapshots_negative.VolumesSnapshotNegativeTestJSON.test_list_snapshots_invalid_param_sort [0.015538s] ... ok
+{9} tempest.api.compute.volumes.test_attach_volume.AttachVolumeTestJSON.test_attach_detach_volume [176.531666s] ... ok
+{26} tempest.api.compute.images.test_image_metadata.ImagesMetadataTestJSON.test_delete_image_metadata_item [0.568264s] ... ok
+{25} tempest.api.compute.admin.test_quotas.QuotasAdminTestJSON.test_delete_quota [0.678714s] ... ok
+{25} tempest.api.compute.admin.test_quotas.QuotasAdminTestJSON.test_get_default_quotas [0.084412s] ... ok
+{26} tempest.api.compute.images.test_image_metadata.ImagesMetadataTestJSON.test_get_image_metadata_item [0.304391s] ... ok
+{29} tempest.api.volume.test_volumes_get.VolumesGetTest.test_volume_create_get_update_delete_as_clone [56.503085s] ... ok
+{26} tempest.api.compute.images.test_image_metadata.ImagesMetadataTestJSON.test_list_image_metadata [0.258510s] ... ok
+{26} tempest.api.compute.images.test_image_metadata.ImagesMetadataTestJSON.test_set_image_metadata [0.519075s] ... ok
+{25} tempest.api.compute.admin.test_quotas.QuotasAdminTestJSON.test_get_updated_quotas [0.905625s] ... ok
+{26} tempest.api.compute.images.test_image_metadata.ImagesMetadataTestJSON.test_set_image_metadata_item [0.580541s] ... ok
+{25} tempest.api.compute.admin.test_quotas.QuotasAdminTestJSON.test_update_all_quota_resources_for_tenant [0.713831s] ... ok
+{26} tempest.api.compute.images.test_image_metadata.ImagesMetadataTestJSON.test_update_image_metadata [0.601380s] ... ok
+{26} tempest.api.compute.images.test_list_image_filters_negative.ListImageFiltersNegativeTestJSON.test_get_nonexistent_image [0.195800s] ... ok
+{26} tempest.api.compute.security_groups.test_security_group_rules.SecurityGroupRulesTestJSON.test_security_group_rules_create [0.453323s] ... ok
+{24} tempest.api.compute.security_groups.test_security_groups.SecurityGroupsTestJSON.test_list_security_groups_by_server [39.875545s] ... ok
+{24} tempest.api.compute.security_groups.test_security_groups.SecurityGroupsTestJSON.test_security_group_create_get_delete [0.347247s] ... ok
+{26} tempest.api.compute.security_groups.test_security_group_rules.SecurityGroupRulesTestJSON.test_security_group_rules_create_with_optional_cidr [0.404756s] ... ok
+{26} tempest.api.compute.security_groups.test_security_group_rules.SecurityGroupRulesTestJSON.test_security_group_rules_create_with_optional_group_id [0.568782s] ... ok
+{26} tempest.api.compute.security_groups.test_security_group_rules.SecurityGroupRulesTestJSON.test_security_group_rules_delete_when_peer_group_deleted [0.732630s] ... ok
+{24} tempest.api.compute.security_groups.test_security_groups.SecurityGroupsTestJSON.test_security_groups_create_list_delete [1.611716s] ... ok
+{26} tempest.api.compute.security_groups.test_security_group_rules.SecurityGroupRulesTestJSON.test_security_group_rules_list [0.877483s] ... ok
+{21} tempest.api.volume.admin.test_volumes_actions.VolumesActionsTest.test_volume_force_delete_when_volume_is_error [24.220591s] ... ok
+{10} tempest.api.compute.servers.test_attach_interfaces.AttachInterfacesTestJSON.test_create_list_show_delete_interfaces_by_network_port [110.834404s] ... ok
+{23} tempest.api.compute.servers.test_device_tagging.TaggedBootDevicesTest.test_tagged_boot_devices [188.210989s] ... ok
+{21} tempest.api.volume.admin.test_volumes_actions.VolumesActionsTest.test_volume_force_delete_when_volume_is_maintenance [4.635567s] ... ok
+{27} tempest.api.volume.test_image_metadata.VolumesImageMetadata.test_update_show_delete_image_metadata [0.174043s] ... ok
+{30} tempest.api.volume.admin.test_snapshots_actions.SnapshotsActionsTest.test_reset_snapshot_status [0.254659s] ... ok
+{37} tempest.api.compute.floating_ips.test_list_floating_ips_negative.FloatingIPDetailsNegativeTestJSON.test_get_nonexistent_floating_ip_details [0.133076s] ... ok
+{28} tempest.api.volume.test_volumes_actions.VolumesActionsTest.test_attach_detach_volume_to_instance [53.048130s] ... ok
+{12} tempest.api.compute.servers.test_servers.ServersTestJSON.test_create_with_existing_server_name [109.895884s] ... ok
+{21} tempest.api.volume.admin.test_volumes_actions.VolumesActionsTest.test_volume_reset_status [11.960620s] ... ok
+{37} tempest.api.volume.admin.test_group_types.GroupTypesTest.test_group_type_create_list_update_show_delete [0.235830s] ... ok
+{37} tempest.api.volume.admin.test_group_types.GroupTypesTest.test_group_type_list_by_optional_params [0.210562s] ... ok
+{2} tempest.api.compute.servers.test_server_actions.ServerActionsTestJSON.test_get_console_output_with_unlimited_size [51.796234s] ... ok
+{2} tempest.api.compute.servers.test_server_actions.ServerActionsTestJSON.test_get_vnc_console [1.789752s] ... ok
+{36} tempest.api.volume.test_volumes_extend.VolumesExtendAttachedTest.test_extend_attached_volume [149.539764s] ... ok
+{19} tempest.api.compute.images.test_images.ImagesTestJSON.test_delete_saving_image [42.882674s] ... ok
+{4} tempest.api.volume.test_volumes_snapshots.VolumesSnapshotTestJSON.test_snapshot_create_delete_with_volume_in_use [194.048476s] ... ok
+{29} tempest.api.volume.test_volumes_get.VolumesGetTest.test_volume_create_get_update_delete_from_image [37.318776s] ... ok
+{33} tempest.api.volume.test_volumes_snapshots_negative.VolumesSnapshotNegativeTestJSON.test_volume_from_snapshot_decreasing_size [41.708108s] ... ok
+{32} tempest.api.compute.admin.test_volume.AttachSCSIVolumeTestJSON.test_attach_scsi_disk_with_config_drive [139.727088s] ... ok
+{23} tempest.api.volume.admin.test_volume_retype.VolumeRetypeWithoutMigrationTest.test_available_volume_retype [13.364744s] ... ok
+{34} tempest.api.compute.images.test_list_image_filters.ListImageFiltersTestJSON.test_list_images_filter_by_changes_since [0.090759s] ... ok
+{34} tempest.api.compute.images.test_list_image_filters.ListImageFiltersTestJSON.test_list_images_filter_by_name [0.064565s] ... ok
+{34} tempest.api.compute.images.test_list_image_filters.ListImageFiltersTestJSON.test_list_images_filter_by_server_id [0.079191s] ... ok
+{34} tempest.api.compute.images.test_list_image_filters.ListImageFiltersTestJSON.test_list_images_filter_by_server_ref [0.140102s] ... ok
+{34} tempest.api.compute.images.test_list_image_filters.ListImageFiltersTestJSON.test_list_images_filter_by_status [0.084107s] ... ok
+{34} tempest.api.compute.images.test_list_image_filters.ListImageFiltersTestJSON.test_list_images_filter_by_type [0.086509s] ... ok
+{34} tempest.api.compute.images.test_list_image_filters.ListImageFiltersTestJSON.test_list_images_limit_results [0.068477s] ... ok
+{34} tempest.api.compute.images.test_list_image_filters.ListImageFiltersTestJSON.test_list_images_with_detail_filter_by_changes_since [0.277981s] ... ok
+{34} tempest.api.compute.images.test_list_image_filters.ListImageFiltersTestJSON.test_list_images_with_detail_filter_by_name [0.057618s] ... ok
+{34} tempest.api.compute.images.test_list_image_filters.ListImageFiltersTestJSON.test_list_images_with_detail_filter_by_server_ref [0.222897s] ... ok
+{34} tempest.api.compute.images.test_list_image_filters.ListImageFiltersTestJSON.test_list_images_with_detail_filter_by_status [0.112636s] ... ok
+{34} tempest.api.compute.images.test_list_image_filters.ListImageFiltersTestJSON.test_list_images_with_detail_filter_by_type [0.258452s] ... ok
+{34} tempest.api.compute.images.test_list_image_filters.ListImageFiltersTestJSON.test_list_images_with_detail_limit_results [0.061516s] ... ok
+{22} tempest.api.compute.servers.test_device_tagging.TaggedBootDevicesTest_v242.test_tagged_boot_devices [142.342081s] ... ok
+{30} tempest.api.volume.admin.test_snapshots_actions.SnapshotsActionsTest.test_snapshot_force_delete_when_snapshot_is_creating [19.726799s] ... ok
+{18} tempest.api.compute.servers.test_server_tags.ServerTagsTestJSON.test_check_tag_existence [0.163120s] ... ok
+{14} tempest.api.compute.servers.test_disk_config.ServerDiskConfigTestJSON.test_resize_server_from_manual_to_auto [74.976992s] ... ok
+{18} tempest.api.compute.servers.test_server_tags.ServerTagsTestJSON.test_create_delete_tag [0.356475s] ... ok
+{8} tempest.api.compute.servers.test_delete_server.DeleteServersTestJSON.test_delete_server_while_in_shelved_state [58.346910s] ... ok
+{18} tempest.api.compute.servers.test_server_tags.ServerTagsTestJSON.test_delete_all_tags [0.316287s] ... ok
+{18} tempest.api.compute.servers.test_server_tags.ServerTagsTestJSON.test_update_all_tags [0.321869s] ... ok
+{38} tempest.api.compute.servers.test_create_server_multi_nic.ServersTestMultiNic.test_verify_multiple_nics_order [60.382842s] ... ok
+{16} tempest.scenario.test_shelve_instance.TestShelveInstance.test_shelve_volume_backed_instance [132.658936s] ... ok
+{38} tempest.api.volume.admin.test_user_messages.UserMessagesTest.test_delete_message [1.548459s] ... ok
+{38} tempest.api.volume.admin.test_user_messages.UserMessagesTest.test_list_show_messages [1.439478s] ... ok
+{35} tempest.api.compute.servers.test_instance_actions_negative.InstanceActionsNegativeTestJSON.test_get_instance_action_invalid_request [0.038520s] ... ok
+{35} tempest.api.compute.servers.test_instance_actions_negative.InstanceActionsNegativeTestJSON.test_list_instance_actions_non_existent_server [0.015928s] ... ok
+{31} tempest.api.compute.images.test_images_oneserver_negative.ImagesOneServerNegativeTestJSON.test_delete_image_that_is_not_yet_active [61.765069s] ... ok
+{2} tempest.api.compute.servers.test_server_actions.ServerActionsTestJSON.test_lock_unlock_server [26.991562s] ... ok
+{38} tempest.api.volume.test_volumes_get.VolumesSummaryTest.test_show_volume_summary [0.135316s] ... ok
+{30} tempest.api.volume.admin.test_snapshots_actions.SnapshotsActionsTest.test_snapshot_force_delete_when_snapshot_is_deleting [19.769001s] ... ok
+{11} tempest.api.compute.servers.test_server_rescue.ServerStableDeviceRescueTest.test_stable_device_rescue_disk_virtio [94.378327s] ... ok
+{18} tempest.api.compute.test_quotas.QuotasTestJSON.test_compare_tenant_quotas_with_default_quotas [0.350218s] ... ok
+{18} tempest.api.compute.test_quotas.QuotasTestJSON.test_get_default_quotas [0.060026s] ... ok
+{18} tempest.api.compute.test_quotas.QuotasTestJSON.test_get_quotas [0.136984s] ... ok
+{4} tempest.api.volume.test_volumes_snapshots.VolumesSnapshotTestJSON.test_snapshot_create_get_list_update_delete [31.015328s] ... ok
+{5} tempest.scenario.test_volume_boot_pattern.TestVolumeBootPattern.test_create_server_from_volume_snapshot [131.269021s] ... ok
+{1} tempest.scenario.test_network_basic_ops.TestNetworkBasicOps.test_hotplug_nic [108.967830s] ... ok
+{2} tempest.api.compute.servers.test_server_actions.ServerActionsTestJSON.test_pause_unpause_server [9.464525s] ... ok
+{26} tempest.api.compute.servers.test_attach_interfaces.AttachInterfacesV270Test.test_create_get_list_interfaces [52.175922s] ... ok
+{34} tempest.api.compute.security_groups.test_security_groups_negative.SecurityGroupsNegativeTestJSON.test_delete_nonexistent_security_group [0.112947s] ... ok
+{34} tempest.api.compute.security_groups.test_security_groups_negative.SecurityGroupsNegativeTestJSON.test_delete_security_group_without_passing_id [0.009720s] ... ok
+{34} tempest.api.compute.security_groups.test_security_groups_negative.SecurityGroupsNegativeTestJSON.test_delete_the_default_security_group [0.346261s] ... ok
+{34} tempest.api.compute.security_groups.test_security_groups_negative.SecurityGroupsNegativeTestJSON.test_security_group_create_with_duplicate_name ... SKIPPED: Neutron allows duplicate names for security groups
+{34} tempest.api.compute.security_groups.test_security_groups_negative.SecurityGroupsNegativeTestJSON.test_security_group_create_with_invalid_group_description ... SKIPPED: Skipped until bug: https://launchpad.net/bugs/1161411 is resolved.
+{34} tempest.api.compute.security_groups.test_security_groups_negative.SecurityGroupsNegativeTestJSON.test_security_group_create_with_invalid_group_name ... SKIPPED: Skipped until bug: https://launchpad.net/bugs/1161411 is resolved.
+{34} tempest.api.compute.security_groups.test_security_groups_negative.SecurityGroupsNegativeTestJSON.test_security_group_get_nonexistent_group [0.032057s] ... ok
+{34} tempest.api.compute.security_groups.test_security_groups_negative.SecurityGroupsNegativeTestJSON.test_update_non_existent_security_group [0.037565s] ... ok
+{34} tempest.api.compute.security_groups.test_security_groups_negative.SecurityGroupsNegativeTestJSON.test_update_security_group_with_invalid_sg_des ... SKIPPED: Neutron does not check the security group description
+{34} tempest.api.compute.security_groups.test_security_groups_negative.SecurityGroupsNegativeTestJSON.test_update_security_group_with_invalid_sg_id ... SKIPPED: Neutron does not check the security group ID
+{34} tempest.api.compute.security_groups.test_security_groups_negative.SecurityGroupsNegativeTestJSON.test_update_security_group_with_invalid_sg_name ... SKIPPED: Neutron does not check the security group name
+{6} tempest.scenario.test_network_advanced_server_ops.TestNetworkAdvancedServerOps.test_server_connectivity_rebuild [83.675488s] ... ok
+{34} tempest.api.compute.test_tenant_networks.ComputeTenantNetworksTest.test_list_show_tenant_networks [0.632882s] ... ok
+{37} tempest.api.volume.admin.test_groups.GroupsV314Test.test_create_group_from_group [44.863136s] ... ok
+{20} tempest.api.compute.servers.test_server_rescue_negative.ServerRescueNegativeTestJSON.test_rescued_vm_detach_volume [137.230017s] ... ok
+{20} tempest.api.compute.servers.test_server_rescue_negative.ServerRescueNegativeTestJSON.test_rescued_vm_reboot [0.035455s] ... ok
+{20} tempest.api.compute.servers.test_server_rescue_negative.ServerRescueNegativeTestJSON.test_rescued_vm_rebuild [0.030942s] ... ok
+{14} tempest.api.compute.servers.test_disk_config.ServerDiskConfigTestJSON.test_update_server_from_auto_to_manual [31.261470s] ... ok
+{27} tempest.api.volume.test_volume_delete_cascade.VolumesDeleteCascade.test_volume_delete_cascade [61.409365s] ... ok
+{19} tempest.api.compute.servers.test_server_addresses.ServerAddressesTestJSON.test_list_server_addresses [0.039031s] ... ok
+{19} tempest.api.compute.servers.test_server_addresses.ServerAddressesTestJSON.test_list_server_addresses_by_network [0.061581s] ... ok
+{24} tempest.api.compute.security_groups.test_security_groups.SecurityGroupsTestJSON.test_server_security_groups [75.328868s] ... ok
+{24} tempest.api.compute.security_groups.test_security_groups.SecurityGroupsTestJSON.test_update_security_groups [0.360057s] ... ok
+{17} tempest.api.compute.volumes.test_attach_volume.AttachVolumeShelveTestJSON.test_detach_volume_shelved_or_offload_server [127.884403s] ... ok
+{39} tempest.api.compute.servers.test_server_rescue.ServerStableDeviceRescueTestIDE.test_stable_device_rescue_cdrom_ide [86.260578s] ... ok
+{12} tempest.api.compute.servers.test_servers.ServersTestJSON.test_update_access_server_address [60.928790s] ... ok
+{28} tempest.api.volume.test_volumes_actions.VolumesActionsTest.test_get_volume_attachment [62.448095s] ... ok
+{28} tempest.api.volume.test_volumes_actions.VolumesActionsTest.test_reserve_unreserve_volume [0.132591s] ... ok
+{28} tempest.api.volume.test_volumes_actions.VolumesActionsTest.test_volume_bootable [0.123827s] ... ok
+{34} tempest.api.volume.admin.test_volume_type_access.VolumeTypesAccessTest.test_volume_type_access_add [13.084669s] ... ok
+{28} tempest.api.volume.test_volumes_actions.VolumesActionsTest.test_volume_readonly_update [0.139788s] ... ok
+{23} tempest.api.volume.test_volume_transfers.VolumesTransfersV355Test.test_create_get_list_accept_volume_transfer [44.792366s] ... ok
+{34} tempest.api.volume.admin.test_volume_type_access.VolumeTypesAccessTest.test_volume_type_access_list [0.146416s] ... ok
+{37} tempest.api.volume.admin.test_volume_quotas_negative.VolumeQuotasNegativeTestJSON.test_quota_volume_gigabytes [0.170978s] ... ok
+{37} tempest.api.volume.admin.test_volume_quotas_negative.VolumeQuotasNegativeTestJSON.test_quota_volumes [0.181252s] ... ok
+{37} tempest.api.volume.admin.test_volume_quotas_negative.VolumeQuotasNegativeTestJSON.test_volume_extend_gigabytes_quota_deviation [0.137933s] ... ok
+{14} setUpClass (tempest.api.compute.servers.test_virtual_interfaces_negative.VirtualInterfacesNegativeTestJSON) ... SKIPPED: nova-network is gone
+{2} tempest.api.compute.servers.test_server_actions.ServerActionsTestJSON.test_reboot_server_hard [25.785814s] ... ok
+{30} tempest.api.volume.admin.test_snapshots_actions.SnapshotsActionsTest.test_snapshot_force_delete_when_snapshot_is_error [32.187207s] ... ok
+{34} tempest.api.volume.test_versions.VersionsTest.test_list_versions [0.008049s] ... ok
+{34} tempest.api.volume.test_versions.VersionsTest.test_show_version [0.126215s] ... ok
+{25} tempest.api.compute.admin.test_servers.ServersAdmin275Test.test_rebuild_update_server_275 [91.784117s] ... ok
+{22} tempest.api.volume.admin.test_volume_snapshot_quotas_negative.VolumeSnapshotQuotasNegativeTestJSON.test_quota_volume_gigabytes_snapshots [0.204527s] ... ok
+{22} tempest.api.volume.admin.test_volume_snapshot_quotas_negative.VolumeSnapshotQuotasNegativeTestJSON.test_quota_volume_snapshots [0.061413s] ... ok
+{21} tempest.scenario.test_server_basic_ops.TestServerBasicOps.test_server_basic_ops [53.867783s] ... ok
+{36} tempest.api.volume.test_volumes_extend.VolumesExtendTest.test_volume_extend [60.898767s] ... ok
+{8} tempest.api.compute.servers.test_delete_server.DeleteServersTestJSON.test_delete_server_while_in_shutoff_state [50.384760s] ... ok
+{7} tempest.api.compute.volumes.test_attach_volume_negative.AttachVolumeNegativeTest.test_attach_attached_volume_to_same_server [110.224529s] ... ok
+{23} tempest.api.volume.test_volume_transfers.VolumesTransfersV355Test.test_create_list_delete_volume_transfer [14.118621s] ... ok
+{39} tempest.api.compute.test_extensions.ExtensionsTest.test_get_extension [0.126496s] ... ok
+{39} tempest.api.compute.test_extensions.ExtensionsTest.test_list_extensions [0.017889s] ... ok
+{0} tempest.scenario.test_network_v6.TestGettingAddress.test_dualnet_dhcp6_stateless_from_os [141.601749s] ... ok
+{39} tempest.api.volume.admin.test_volume_quota_classes.VolumeQuotaClassesTest.test_show_default_quota [0.126966s] ... ok
+{39} tempest.api.volume.admin.test_volume_quota_classes.VolumeQuotaClassesTest.test_update_default_quota [0.735388s] ... ok
+{35} tempest.api.compute.servers.test_list_servers_negative.ListServersNegativeTestJSON.test_list_servers_by_changes_since_future_date [0.081769s] ... ok
+{35} tempest.api.compute.servers.test_list_servers_negative.ListServersNegativeTestJSON.test_list_servers_by_changes_since_invalid_date [0.008593s] ... ok
+{35} tempest.api.compute.servers.test_list_servers_negative.ListServersNegativeTestJSON.test_list_servers_by_limits_greater_than_actual_count [0.211031s] ... ok
+{35} tempest.api.compute.servers.test_list_servers_negative.ListServersNegativeTestJSON.test_list_servers_by_limits_pass_negative_value [0.010399s] ... ok
+{35} tempest.api.compute.servers.test_list_servers_negative.ListServersNegativeTestJSON.test_list_servers_by_limits_pass_string [0.011923s] ... ok
+{35} tempest.api.compute.servers.test_list_servers_negative.ListServersNegativeTestJSON.test_list_servers_by_non_existing_flavor [0.022184s] ... ok
+{35} tempest.api.compute.servers.test_list_servers_negative.ListServersNegativeTestJSON.test_list_servers_by_non_existing_image [0.066572s] ... ok
+{35} tempest.api.compute.servers.test_list_servers_negative.ListServersNegativeTestJSON.test_list_servers_by_non_existing_server_name [0.070674s] ... ok
+{19} tempest.api.compute.servers.test_server_metadata_negative.ServerMetadataNegativeTestJSON.test_create_server_metadata_blank_key [0.068303s] ... ok
+{19} tempest.api.compute.servers.test_server_metadata_negative.ServerMetadataNegativeTestJSON.test_delete_metadata_non_existent_server ... SKIPPED: Metadata is read-only on non-Xen-based deployments.
+{19} tempest.api.compute.servers.test_server_metadata_negative.ServerMetadataNegativeTestJSON.test_list_server_metadata_non_existent_server [0.012819s] ... ok
+{19} tempest.api.compute.servers.test_server_metadata_negative.ServerMetadataNegativeTestJSON.test_metadata_items_limit ... SKIPPED: Metadata is read-only on non-Xen-based deployments.
+{35} tempest.api.compute.servers.test_list_servers_negative.ListServersNegativeTestJSON.test_list_servers_detail_server_is_deleted [0.261382s] ... ok
+{35} tempest.api.compute.servers.test_list_servers_negative.ListServersNegativeTestJSON.test_list_servers_status_non_existing [0.011113s] ... ok
+{19} tempest.api.compute.servers.test_server_metadata_negative.ServerMetadataNegativeTestJSON.test_server_create_metadata_key_too_long [0.156584s] ... ok
+{19} tempest.api.compute.servers.test_server_metadata_negative.ServerMetadataNegativeTestJSON.test_server_metadata_non_existent_server [0.018374s] ... ok
+{19} tempest.api.compute.servers.test_server_metadata_negative.ServerMetadataNegativeTestJSON.test_set_metadata_invalid_key ... SKIPPED: Metadata is read-only on non-Xen-based deployments.
+{19} tempest.api.compute.servers.test_server_metadata_negative.ServerMetadataNegativeTestJSON.test_set_metadata_non_existent_server ... SKIPPED: Metadata is read-only on non-Xen-based deployments.
+{19} tempest.api.compute.servers.test_server_metadata_negative.ServerMetadataNegativeTestJSON.test_set_server_metadata_blank_key ... SKIPPED: Metadata is read-only on non-Xen-based deployments.
+{19} tempest.api.compute.servers.test_server_metadata_negative.ServerMetadataNegativeTestJSON.test_set_server_metadata_missing_metadata ... SKIPPED: Metadata is read-only on non-Xen-based deployments.
+{19} tempest.api.compute.servers.test_server_metadata_negative.ServerMetadataNegativeTestJSON.test_update_metadata_non_existent_server ... SKIPPED: Metadata is read-only on non-Xen-based deployments.
+{19} tempest.api.compute.servers.test_server_metadata_negative.ServerMetadataNegativeTestJSON.test_update_metadata_with_blank_key ... SKIPPED: Metadata is read-only on non-Xen-based deployments.
+{35} tempest.api.compute.servers.test_list_servers_negative.ListServersNegativeTestJSON.test_list_servers_with_a_deleted_server [0.052727s] ... ok
+{2} tempest.api.compute.servers.test_server_actions.ServerActionsTestJSON.test_rebuild_server [19.341438s] ... ok
+{28} tempest.api.volume.test_volumes_actions.VolumesActionsTest.test_volume_upload [25.414129s] ... ok
+{20} tempest.api.compute.servers.test_servers.ServerShowV263Test.test_show_update_rebuild_list_server ... SKIPPED: ``[compute]/certified_image_ref`` required to test image certificate validation.
+{28} setUpClass (tempest.api.volume.test_volumes_backup.VolumesBackupsV39Test) ... SKIPPED: Cinder backup feature disabled
+{18} tempest.api.volume.admin.test_group_snapshots.GroupSnapshotsTest.test_create_group_from_group_snapshot [54.095398s] ... ok
+{33} tempest.scenario.test_server_advanced_ops.TestServerAdvancedOps.test_server_sequence_suspend_resume [76.589918s] ... ok
+{1} tempest.scenario.test_network_basic_ops.TestNetworkBasicOps.test_mtu_sized_frames [58.945338s] ... ok
+{24} tempest.api.compute.servers.test_server_password.ServerPasswordTestJSON.test_delete_server_password [0.050698s] ... ok
+{24} tempest.api.compute.servers.test_server_password.ServerPasswordTestJSON.test_get_server_password [0.030704s] ... ok
+{12} tempest.api.compute.servers.test_servers.ServersTestJSON.test_update_server_name [38.018250s] ... ok
+{30} tempest.api.volume.admin.test_snapshots_actions.SnapshotsActionsTest.test_snapshot_force_delete_when_snapshot_is_error_deleting [32.059298s] ... ok
+{30} tempest.api.volume.admin.test_snapshots_actions.SnapshotsActionsTest.test_update_snapshot_status [0.163686s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_create_numeric_server_name [0.388399s] ... ok
+{25} tempest.api.compute.servers.test_instance_actions.InstanceActionsV221TestJSON.test_get_list_deleted_instance_actions [23.817206s] ... ok
+{25} tempest.api.compute.servers.test_multiple_create_negative.MultipleCreateNegativeTestJSON.test_max_count_less_than_min_count [0.178165s] ... ok
+{25} tempest.api.compute.servers.test_multiple_create_negative.MultipleCreateNegativeTestJSON.test_max_count_less_than_one [0.043899s] ... ok
+{25} tempest.api.compute.servers.test_multiple_create_negative.MultipleCreateNegativeTestJSON.test_max_count_non_integer [0.038502s] ... ok
+{25} tempest.api.compute.servers.test_multiple_create_negative.MultipleCreateNegativeTestJSON.test_min_count_less_than_one [0.043413s] ... ok
+{25} tempest.api.compute.servers.test_multiple_create_negative.MultipleCreateNegativeTestJSON.test_min_count_non_integer [0.040349s] ... ok
+{20} tempest.api.compute.volumes.test_volumes_get.VolumesGetTestJSON.test_volume_create_get_delete [11.988964s] ... ok
+{3} tempest.scenario.test_security_groups_basic_ops.TestSecurityGroupsBasicOps.test_cross_tenant_traffic [186.424958s] ... ok
+{30} setUpClass (tempest.scenario.test_compute_unified_limits.ServersQuotaTest) ... SKIPPED: Compute unified limits are not enabled.
+{12} setUpClass (tempest.api.volume.admin.test_volumes_backup.VolumesBackupsAdminTest) ... SKIPPED: Cinder backup feature disabled
+{8} tempest.api.compute.servers.test_delete_server.DeleteServersTestJSON.test_delete_server_while_in_suspended_state [34.145003s] ... ok
+{20} tempest.api.volume.admin.test_encrypted_volumes_extend.EncryptedVolumesExtendAttachedTest.test_extend_attached_encrypted_volume_luksv1 ... SKIPPED: Attached encrypted volume extend is disabled.
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_attach_volumes_with_nonexistent_volume_id [25.968392s] ... ok
+{22} tempest.api.volume.admin.test_volume_types.VolumeTypesTest.test_volume_crud_with_volume_type_and_extra_specs [33.046467s] ... ok
+{22} tempest.api.volume.admin.test_volume_types.VolumeTypesTest.test_volume_type_create_get_delete [0.047566s] ... ok
+{22} tempest.api.volume.admin.test_volume_types.VolumeTypesTest.test_volume_type_encryption_create_get_update_delete [0.277987s] ... ok
+{22} tempest.api.volume.admin.test_volume_types.VolumeTypesTest.test_volume_type_list [0.054870s] ... ok
+{22} tempest.api.volume.admin.test_volume_types.VolumeTypesTest.test_volume_type_update [0.178232s] ... ok
+{13} tempest.api.compute.servers.test_server_rescue.ServerBootFromVolumeStableRescueTest.test_stable_device_rescue_bfv_image_volume [152.965200s] ... ok
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_create_volume_from_deactivated_image [1.782509s] ... ok
+{15} tempest.scenario.test_stamp_pattern.TestStampPattern.test_stamp_pattern [302.358515s] ... ok
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_create_volume_from_image_with_decreasing_size [1.632792s] ... ok
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_create_volume_with_invalid_size [0.007589s] ... ok
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_create_volume_with_nonexistent_snapshot_id [0.018063s] ... ok
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_create_volume_with_nonexistent_source_volid [0.018850s] ... ok
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_create_volume_with_nonexistent_volume_type [0.019760s] ... ok
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_create_volume_with_size_negative [0.010971s] ... ok
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_create_volume_with_size_zero [0.012021s] ... ok
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_create_volume_without_passing_size [0.008413s] ... ok
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_delete_invalid_volume_id [0.018476s] ... ok
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_delete_volume_without_passing_volume_id [0.010367s] ... ok
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_detach_volumes_with_invalid_volume_id [0.016142s] ... ok
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_get_invalid_volume_id [0.023860s] ... ok
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_get_volume_without_passing_volume_id [0.008780s] ... ok
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_list_volumes_detail_with_invalid_status [0.068395s] ... ok
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_list_volumes_detail_with_nonexistent_name [0.056554s] ... ok
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_list_volumes_with_invalid_status [0.047950s] ... ok
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_list_volumes_with_nonexistent_name [0.049650s] ... ok
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_reserve_volume_with_negative_volume_status [0.097912s] ... ok
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_reserve_volume_with_nonexistent_volume_id [0.020650s] ... ok
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_unreserve_volume_with_nonexistent_volume_id [0.014680s] ... ok
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_update_volume_with_empty_volume_id [0.007399s] ... ok
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_update_volume_with_invalid_volume_id [0.018359s] ... ok
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_update_volume_with_nonexistent_volume_id [0.019808s] ... ok
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_volume_delete_nonexistent_volume_id [0.019922s] ... ok
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_volume_extend_with_None_size [0.011309s] ... ok
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_volume_extend_with_non_number_size [0.010992s] ... ok
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_volume_extend_with_nonexistent_volume_id [0.016469s] ... ok
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_volume_extend_with_size_smaller_than_original_size [0.011359s] ... ok
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_volume_extend_without_passing_volume_id [0.020060s] ... ok
+{34} tempest.api.volume.test_volumes_negative.VolumesNegativeTest.test_volume_get_nonexistent_volume_id [0.016985s] ... ok
+{22} tempest.api.volume.test_availability_zone.AvailabilityZoneTestJSON.test_get_availability_zone_list [0.134044s] ... ok
+{35} tempest.api.compute.servers.test_server_addresses_negative.ServerAddressesNegativeTestJSON.test_list_server_addresses_by_network_neg [0.026590s] ... ok
+{35} tempest.api.compute.servers.test_server_addresses_negative.ServerAddressesNegativeTestJSON.test_list_server_addresses_invalid_server_id [0.010230s] ... ok
+{26} tempest.api.compute.servers.test_create_server.ServersTestBootFromVolume.test_host_name_is_same_as_server_name [3.563673s] ... ok
+{26} tempest.api.compute.servers.test_create_server.ServersTestBootFromVolume.test_list_servers [0.068433s] ... ok
+{26} tempest.api.compute.servers.test_create_server.ServersTestBootFromVolume.test_list_servers_with_detail [0.175690s] ... ok
+{26} tempest.api.compute.servers.test_create_server.ServersTestBootFromVolume.test_verify_created_server_vcpus [0.045254s] ... ok
+{26} tempest.api.compute.servers.test_create_server.ServersTestBootFromVolume.test_verify_server_details [0.000575s] ... ok
+{6} tempest.scenario.test_network_advanced_server_ops.TestNetworkAdvancedServerOps.test_server_connectivity_resize [69.648682s] ... ok
+{36} tempest.api.volume.test_volumes_extend.VolumesExtendTest.test_volume_extend_when_volume_has_snapshot [43.646899s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_create_server_from_non_bootable_volume [14.617570s] ... ok
+{2} tempest.api.compute.servers.test_server_actions.ServerActionsTestJSON.test_rebuild_server_in_stop_state [30.507226s] ... ok
+{32} tempest.api.compute.admin.test_volumes_negative.VolumesAdminNegativeTest.test_update_attached_volume_with_nonexistent_volume_in_body [64.706292s] ... ok
+{25} tempest.api.compute.servers.test_novnc.NoVNCConsoleTestJSON.test_novnc [0.334603s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_create_server_invalid_bdm_in_2nd_dict [2.850685s] ... ok
+{25} tempest.api.compute.servers.test_novnc.NoVNCConsoleTestJSON.test_novnc_bad_token [0.210983s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_create_server_metadata_exceeds_length_limit [0.505643s] ... ok
+{9} tempest.api.compute.volumes.test_attach_volume.AttachVolumeTestJSON.test_list_get_volume_attachments [148.507410s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_create_server_name_length_exceeds_256 [0.525451s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_create_with_invalid_flavor [0.806656s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_create_with_invalid_image [0.416868s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_create_with_invalid_network_uuid [0.862904s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_create_with_non_existent_keypair [0.509729s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_create_with_nonexistent_security_group [0.382433s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_delete_non_existent_server [0.291283s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_delete_server_pass_id_exceeding_length_limit [0.311748s] ... ok
+{20} tempest.api.volume.test_volume_absolute_limits.AbsoluteLimitsTests.test_get_volume_absolute_limits [0.048078s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_delete_server_pass_negative_id [0.507043s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_force_delete_nonexistent_server_id [0.675217s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_get_console_output_of_non_existent_server [0.417707s] ... ok
+{25} tempest.api.volume.admin.test_volume_hosts.VolumeHostsAdminTestsJSON.test_list_hosts [0.129688s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_get_non_existent_server [0.396771s] ... ok
+{25} tempest.api.volume.admin.test_volume_hosts.VolumeHostsAdminTestsJSON.test_show_host [0.394322s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_invalid_access_ip_v4_address [0.446421s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_invalid_ip_v6_address [0.356296s] ... ok
+{39} tempest.api.volume.test_snapshot_metadata.SnapshotMetadataTestJSON.test_crud_snapshot_metadata [0.224140s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_pause_non_existent_server [0.597851s] ... ok
+{39} tempest.api.volume.test_snapshot_metadata.SnapshotMetadataTestJSON.test_update_show_snapshot_metadata_item [0.226331s] ... ok
+{25} tempest.api.volume.test_extensions.ExtensionsTestJSON.test_list_extensions [0.104969s] ... ok
+{22} tempest.scenario.test_aggregates_basic_ops.TestAggregatesBasicOps.test_aggregate_basic_ops [0.979216s] ... ok
+{38} tempest.scenario.test_encrypted_cinder_volumes.TestEncryptedCinderVolumes.test_encrypted_cinder_volumes_cryptsetup [81.602896s] ... ok
+{7} tempest.api.compute.volumes.test_attach_volume_negative.AttachVolumeNegativeTest.test_delete_attached_volume [52.408464s] ... ok
+{10} tempest.api.compute.servers.test_attach_interfaces.AttachInterfacesTestJSON.test_reassign_port_between_servers [142.454468s] ... ok
+{37} tempest.api.volume.test_volumes_clone.VolumesCloneTest.test_create_from_bootable_volume [62.112841s] ... ok
+{9} setUpClass (tempest.api.volume.admin.test_multi_backend.VolumeMultiBackendTest) ... SKIPPED: Cinder multi-backend feature disabled
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_pause_paused_server [3.674229s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_personality_file_contents_not_encoded ... SKIPPED: Nova personality feature disabled
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_reboot_deleted_server [0.529437s] ... ok
+{8} tempest.api.compute.servers.test_delete_server.DeleteServersTestJSON.test_delete_server_while_in_verify_resize_state [23.819975s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_reboot_non_existent_server [0.851818s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_rebuild_deleted_server [0.436613s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_rebuild_non_existent_server [0.267114s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_resize_nonexistent_server [0.412564s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_resize_server_with_non_existent_flavor [0.402113s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_resize_server_with_null_flavor [0.278867s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_restore_nonexistent_server_id [0.289597s] ... ok
+{27} tempest.api.volume.test_volume_delete_cascade.VolumesDeleteCascade.test_volume_from_snapshot_cascade_delete [78.414103s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_restore_server_invalid_state [0.292069s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_resume_non_existent_server [0.281197s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_resume_server_invalid_state [0.291574s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_server_name_blank [0.514687s] ... ok
+{8} setUpClass (tempest.api.volume.test_volumes_backup.VolumesBackupsTest) ... SKIPPED: Cinder backup feature disabled
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_shelve_non_existent_server [0.261867s] ... ok
+{27} setUpClass (tempest.scenario.test_server_multinode.TestServerMultinode) ... SKIPPED: Less than 2 compute nodes, skipping multinode tests.
+{19} tempest.api.compute.volumes.test_volume_snapshots.VolumesSnapshotsTestJSON.test_volume_snapshot_create_get_list_delete [45.498307s] ... ok
+{19} setUpClass (tempest.scenario.test_object_storage_basic_ops.TestObjectStorageBasicOps) ... SKIPPED: TestObjectStorageBasicOps skipped as swift is not available
+{32} tempest.api.compute.admin.test_volumes_negative.VolumesAdminNegativeTest.test_update_attached_volume_with_nonexistent_volume_in_uri [23.088622s] ... ok
+{20} tempest.api.volume.test_volume_metadata.VolumesMetadataTest.test_crud_volume_metadata [0.231738s] ... ok
+{20} tempest.api.volume.test_volume_metadata.VolumesMetadataTest.test_update_show_volume_metadata_item [0.160634s] ... ok
+{26} tempest.api.compute.servers.test_list_server_filters.ListServerFiltersTestJSON.test_list_servers_detailed_filter_by_flavor [0.635131s] ... ok
+{26} tempest.api.compute.servers.test_list_server_filters.ListServerFiltersTestJSON.test_list_servers_detailed_filter_by_image ... SKIPPED: Need distinct images to run this test
+{26} tempest.api.compute.servers.test_list_server_filters.ListServerFiltersTestJSON.test_list_servers_detailed_filter_by_server_name [0.254155s] ... ok
+{26} tempest.api.compute.servers.test_list_server_filters.ListServerFiltersTestJSON.test_list_servers_detailed_filter_by_server_status [0.337294s] ... ok
+{26} tempest.api.compute.servers.test_list_server_filters.ListServerFiltersTestJSON.test_list_servers_detailed_limit_results [0.182256s] ... ok
+{26} tempest.api.compute.servers.test_list_server_filters.ListServerFiltersTestJSON.test_list_servers_filter_by_active_status [0.114795s] ... ok
+{26} tempest.api.compute.servers.test_list_server_filters.ListServerFiltersTestJSON.test_list_servers_filter_by_exceed_limit [0.112476s] ... ok
+{26} tempest.api.compute.servers.test_list_server_filters.ListServerFiltersTestJSON.test_list_servers_filter_by_flavor [0.114668s] ... ok
+{26} tempest.api.compute.servers.test_list_server_filters.ListServerFiltersTestJSON.test_list_servers_filter_by_image ... SKIPPED: Need distinct images to run this test
+{26} tempest.api.compute.servers.test_list_server_filters.ListServerFiltersTestJSON.test_list_servers_filter_by_limit [0.039293s] ... ok
+{26} tempest.api.compute.servers.test_list_server_filters.ListServerFiltersTestJSON.test_list_servers_filter_by_server_name [0.121963s] ... ok
+{11} tempest.api.compute.servers.test_server_rescue.ServerStableDeviceRescueTest.test_stable_device_rescue_disk_virtio_with_volume_attached [110.126195s] ... ok
+{19} tempest.scenario.test_unified_limits.ImageQuotaTest.test_image_count_quota [2.420010s] ... ok
+{19} tempest.scenario.test_unified_limits.ImageQuotaTest.test_image_count_uploading_quota ... SKIPPED: tempest.scenario.test_unified_limits skipped as image import is not available
+{1} tempest.scenario.test_network_basic_ops.TestNetworkBasicOps.test_network_basic_ops [51.886604s] ... ok
+{26} tempest.api.compute.servers.test_list_server_filters.ListServerFiltersTestJSON.test_list_servers_filter_by_shutoff_status [6.258894s] ... ok
+{26} tempest.api.compute.servers.test_list_server_filters.ListServerFiltersTestJSON.test_list_servers_filter_by_zero_limit [0.017537s] ... ok
+{24} tempest.api.compute.volumes.test_volumes_list.VolumesTestJSON.test_volume_list [0.088879s] ... ok
+{24} tempest.api.compute.volumes.test_volumes_list.VolumesTestJSON.test_volume_list_param_limit [0.079064s] ... ok
+{26} tempest.api.compute.servers.test_list_server_filters.ListServerFiltersTestJSON.test_list_servers_filtered_by_ip [0.852901s] ... ok
+{24} tempest.api.compute.volumes.test_volumes_list.VolumesTestJSON.test_volume_list_param_offset_and_limit [0.153878s] ... ok
+{24} tempest.api.compute.volumes.test_volumes_list.VolumesTestJSON.test_volume_list_with_detail_param_limit [0.086606s] ... ok
+{24} tempest.api.compute.volumes.test_volumes_list.VolumesTestJSON.test_volume_list_with_detail_param_offset_and_limit [0.171417s] ... ok
+{24} tempest.api.compute.volumes.test_volumes_list.VolumesTestJSON.test_volume_list_with_details [0.074155s] ... ok
+{26} tempest.api.compute.servers.test_list_server_filters.ListServerFiltersTestJSON.test_list_servers_filtered_by_ip_regex [1.154750s] ... ok
+{26} tempest.api.compute.servers.test_list_server_filters.ListServerFiltersTestJSON.test_list_servers_filtered_by_name_regex [0.363557s] ... ok
+{26} tempest.api.compute.servers.test_list_server_filters.ListServerFiltersTestJSON.test_list_servers_filtered_by_name_wildcard [0.217968s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_shelve_shelved_server [20.374094s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_stop_non_existent_server [0.465478s] ... ok
+{19} tempest.scenario.test_unified_limits.ImageQuotaTest.test_image_size_quota [6.792969s] ... ok
+{19} tempest.scenario.test_unified_limits.ImageQuotaTest.test_image_stage_quota ... SKIPPED: tempest.scenario.test_unified_limits skipped as image import is not available
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_suspend_non_existent_server [0.727777s] ... ok
+{24} tempest.api.volume.admin.test_volume_types_extra_specs_negative.ExtraSpecsNegativeTest.test_create_invalid_body [0.012911s] ... ok
+{24} tempest.api.volume.admin.test_volume_types_extra_specs_negative.ExtraSpecsNegativeTest.test_create_none_body [0.012084s] ... ok
+{24} tempest.api.volume.admin.test_volume_types_extra_specs_negative.ExtraSpecsNegativeTest.test_create_nonexistent_type_id [0.038934s] ... ok
+{24} tempest.api.volume.admin.test_volume_types_extra_specs_negative.ExtraSpecsNegativeTest.test_delete_nonexistent_volume_type_id [0.017750s] ... ok
+{24} tempest.api.volume.admin.test_volume_types_extra_specs_negative.ExtraSpecsNegativeTest.test_get_nonexistent_extra_spec_name [0.019786s] ... ok
+{24} tempest.api.volume.admin.test_volume_types_extra_specs_negative.ExtraSpecsNegativeTest.test_get_nonexistent_volume_type_id [0.017260s] ... ok
+{24} tempest.api.volume.admin.test_volume_types_extra_specs_negative.ExtraSpecsNegativeTest.test_list_nonexistent_volume_type_id [0.015599s] ... ok
+{39} tempest.api.volume.test_volumes_clone_negative.VolumesCloneNegativeTest.test_create_from_volume_decreasing_size [23.169886s] ... ok
+{24} tempest.api.volume.admin.test_volume_types_extra_specs_negative.ExtraSpecsNegativeTest.test_update_multiple_extra_spec [0.013968s] ... ok
+{24} tempest.api.volume.admin.test_volume_types_extra_specs_negative.ExtraSpecsNegativeTest.test_update_no_body [0.014653s] ... ok
+{24} tempest.api.volume.admin.test_volume_types_extra_specs_negative.ExtraSpecsNegativeTest.test_update_none_extra_spec_id [0.053418s] ... ok
+{24} tempest.api.volume.admin.test_volume_types_extra_specs_negative.ExtraSpecsNegativeTest.test_update_nonexistent_extra_spec_id [0.052188s] ... ok
+{24} tempest.api.volume.admin.test_volume_types_extra_specs_negative.ExtraSpecsNegativeTest.test_update_nonexistent_type_id [0.038960s] ... ok
+{2} tempest.api.compute.servers.test_server_actions.ServerActionsTestJSON.test_rebuild_server_with_volume_attached [40.813149s] ... ok
+{6} tempest.scenario.test_network_advanced_server_ops.TestNetworkAdvancedServerOps.test_server_connectivity_stop_start [45.399779s] ... ok
+{0} tempest.scenario.test_network_v6.TestGettingAddress.test_dualnet_multi_prefix_dhcpv6_stateless [80.899233s] ... ok
+{11} setUpClass (tempest.scenario.test_volume_backup_restore.TestVolumeBackupRestore) ... SKIPPED: Backup is not enable.
+{35} tempest.api.compute.servers.test_server_rescue.ServerRescueTestJSON.test_rescue_unrescue_instance [18.702025s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_suspend_server_invalid_state [9.951259s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_unpause_non_existent_server [0.273496s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_unpause_server_invalid_state [0.282490s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_unshelve_non_existent_server [0.286962s] ... ok
+{2} tempest.api.compute.servers.test_server_actions.ServerActionsTestJSON.test_remove_server_all_security_groups [9.595775s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_unshelve_server_invalid_state [1.103871s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_update_name_of_non_existent_server [0.272605s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_update_server_name_length_exceeds_256 [0.277974s] ... ok
+{31} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestJSON.test_update_server_set_empty_name [0.271337s] ... ok
+{4} tempest.api.volume.test_volumes_snapshots.VolumesSnapshotTestJSON.test_snapshot_create_offline_delete_online [131.348221s] ... ok
+{24} tempest.api.volume.test_volume_transfers.VolumesTransfersTest.test_create_get_list_accept_volume_transfer [13.589533s] ... ok
+{3} tempest.scenario.test_security_groups_basic_ops.TestSecurityGroupsBasicOps.test_in_tenant_traffic [70.516260s] ... ok
+{35} tempest.api.compute.servers.test_servers.ServerShowV247Test.test_show_server [0.320985s] ... ok
+{38} tempest.scenario.test_encrypted_cinder_volumes.TestEncryptedCinderVolumes.test_encrypted_cinder_volumes_luks [46.763995s] ... ok
+{26} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestMultiTenantJSON.test_delete_a_server_of_another_tenant [0.313380s] ... ok
+{26} tempest.api.compute.servers.test_servers_negative.ServersNegativeTestMultiTenantJSON.test_update_server_of_another_tenant [0.153606s] ... ok
+{5} tempest.scenario.test_volume_boot_pattern.TestVolumeBootPattern.test_image_defined_boot_from_volume [140.069007s] ... ok
+{2} tempest.api.compute.servers.test_server_actions.ServerActionsTestJSON.test_resize_server_confirm [17.147392s] ... ok
+{18} tempest.api.volume.admin.test_group_snapshots.GroupSnapshotsTest.test_delete_group_snapshots_following_updated_volumes [91.838610s] ... ok
+{24} tempest.api.volume.test_volume_transfers.VolumesTransfersTest.test_create_list_delete_volume_transfer [12.931102s] ... ok
+{26} tempest.api.volume.admin.test_qos.QosSpecsTestJSON.test_associate_disassociate_qos [0.356332s] ... ok
+{26} tempest.api.volume.admin.test_qos.QosSpecsTestJSON.test_create_delete_qos_with_back_end_consumer [0.104330s] ... ok
+{26} tempest.api.volume.admin.test_qos.QosSpecsTestJSON.test_create_delete_qos_with_both_consumer [0.099100s] ... ok
+{26} tempest.api.volume.admin.test_qos.QosSpecsTestJSON.test_create_delete_qos_with_front_end_consumer [0.087710s] ... ok
+{26} tempest.api.volume.admin.test_qos.QosSpecsTestJSON.test_get_qos [0.017634s] ... ok
+{26} tempest.api.volume.admin.test_qos.QosSpecsTestJSON.test_list_qos [0.022223s] ... ok
+{26} tempest.api.volume.admin.test_qos.QosSpecsTestJSON.test_set_unset_qos_key [0.104132s] ... ok
+{35} tempest.api.compute.servers.test_servers.ServerShowV247Test.test_update_rebuild_list_server [12.601067s] ... ok
+{6} tempest.scenario.test_network_advanced_server_ops.TestNetworkAdvancedServerOps.test_server_connectivity_suspend_resume [34.468778s] ... ok
+{20} tempest.scenario.test_snapshot_pattern.TestSnapshotPattern.test_snapshot_pattern [44.502810s] ... ok
+{3} tempest.scenario.test_security_groups_basic_ops.TestSecurityGroupsBasicOps.test_multiple_security_groups [25.391558s] ... ok
+{2} tempest.api.compute.servers.test_server_actions.ServerActionsTestJSON.test_resize_server_confirm_from_stopped [20.872949s] ... ok
+{37} tempest.api.volume.test_volumes_clone.VolumesCloneTest.test_create_from_volume [80.380046s] ... ok
+{37} tempest.scenario.test_dashboard_basic_ops.TestDashboardBasicOps.test_basic_scenario [1.682214s] ... ok
+{0} tempest.scenario.test_network_v6.TestGettingAddress.test_dualnet_multi_prefix_slaac [59.999466s] ... ok
+{2} tempest.api.compute.servers.test_server_actions.ServerActionsTestJSON.test_resize_server_revert [23.222125s] ... ok
+{39} tempest.api.volume.test_volumes_snapshots_list.VolumesSnapshotListTestJSON.test_snapshot_list_param_limit [0.042545s] ... ok
+{39} tempest.api.volume.test_volumes_snapshots_list.VolumesSnapshotListTestJSON.test_snapshot_list_param_limit_equals_infinite [0.059923s] ... ok
+{39} tempest.api.volume.test_volumes_snapshots_list.VolumesSnapshotListTestJSON.test_snapshot_list_param_limit_equals_zero [0.021600s] ... ok
+{39} tempest.api.volume.test_volumes_snapshots_list.VolumesSnapshotListTestJSON.test_snapshot_list_param_marker [0.079425s] ... ok
+{39} tempest.api.volume.test_volumes_snapshots_list.VolumesSnapshotListTestJSON.test_snapshot_list_param_offset [0.042152s] ... ok
+{39} tempest.api.volume.test_volumes_snapshots_list.VolumesSnapshotListTestJSON.test_snapshot_list_param_sort_created_at_asc [0.033645s] ... ok
+{39} tempest.api.volume.test_volumes_snapshots_list.VolumesSnapshotListTestJSON.test_snapshot_list_param_sort_created_at_desc [0.027937s] ... ok
+{39} tempest.api.volume.test_volumes_snapshots_list.VolumesSnapshotListTestJSON.test_snapshot_list_param_sort_id_asc [0.031417s] ... ok
+{39} tempest.api.volume.test_volumes_snapshots_list.VolumesSnapshotListTestJSON.test_snapshot_list_param_sort_id_desc [0.026165s] ... ok
+{39} tempest.api.volume.test_volumes_snapshots_list.VolumesSnapshotListTestJSON.test_snapshot_list_param_sort_name_asc [0.038029s] ... ok
+{39} tempest.api.volume.test_volumes_snapshots_list.VolumesSnapshotListTestJSON.test_snapshot_list_param_sort_name_desc [0.038918s] ... ok
+{39} tempest.api.volume.test_volumes_snapshots_list.VolumesSnapshotListTestJSON.test_snapshots_list_details_with_params [0.101752s] ... ok
+{39} tempest.api.volume.test_volumes_snapshots_list.VolumesSnapshotListTestJSON.test_snapshots_list_with_params [0.097648s] ... ok
+{1} tempest.scenario.test_network_basic_ops.TestNetworkBasicOps.test_port_security_macspoofing_port [85.620593s] ... ok
+{18} tempest.api.volume.admin.test_group_snapshots.GroupSnapshotsTest.test_group_snapshot_create_show_list_delete [61.436256s] ... ok
+{3} tempest.scenario.test_security_groups_basic_ops.TestSecurityGroupsBasicOps.test_port_security_disable_security_group [49.384219s] ... ok
+{18} tempest.api.volume.admin.test_groups.GroupsV320Test.test_reset_group_status [2.810615s] ... ok
+{18} tempest.api.volume.admin.test_volume_services.VolumesServicesTestJSON.test_get_service_by_host_name [0.020513s] ... ok
+{18} tempest.api.volume.admin.test_volume_services.VolumesServicesTestJSON.test_get_service_by_service_and_host_name [0.023676s] ... ok
+{18} tempest.api.volume.admin.test_volume_services.VolumesServicesTestJSON.test_get_service_by_service_binary_name [0.016175s] ... ok
+{4} tempest.api.volume.test_volumes_snapshots.VolumesSnapshotTestJSON.test_volume_from_snapshot [87.565222s] ... ok
+{1} tempest.scenario.test_network_basic_ops.TestNetworkBasicOps.test_preserve_preexisting_port [27.618944s] ... ok
+{1} tempest.scenario.test_network_basic_ops.TestNetworkBasicOps.test_router_rescheduling ... SKIPPED: Skipped because network extension: l3_agent_scheduler is not enabled
+{18} tempest.api.volume.admin.test_volume_services.VolumesServicesTestJSON.test_get_service_by_volume_host_name [10.723619s] ... ok
+{18} tempest.api.volume.admin.test_volume_services.VolumesServicesTestJSON.test_list_services [0.020252s] ... ok
+{18} setUpClass (tempest.scenario.test_network_qos_placement.QoSBandwidthAndPacketRateTests) ... SKIPPED: Skipped as no resource inventories are configured for QoS minimum bandwidth and packet rate testing.
+{35} tempest.api.volume.admin.test_volumes_list.VolumesListAdminTestJSON.test_volume_list_param_tenant [11.850952s] ... ok
+{0} tempest.scenario.test_network_v6.TestGettingAddress.test_dualnet_slaac_from_os [52.686956s] ... ok
+{2} tempest.api.compute.servers.test_server_actions.ServerActionsTestJSON.test_resize_server_revert_with_volume_attached [44.862519s] ... ok
+{5} tempest.scenario.test_volume_boot_pattern.TestVolumeBootPattern.test_volume_boot_pattern [100.809705s] ... ok
+{1} tempest.scenario.test_network_basic_ops.TestNetworkBasicOps.test_subnet_details [21.769629s] ... ok
+{3} tempest.scenario.test_security_groups_basic_ops.TestSecurityGroupsBasicOps.test_port_update_new_security_group [37.609228s] ... ok
+{4} tempest.api.volume.test_volumes_snapshots.VolumesSnapshotTestJSON.test_volume_from_snapshot_no_size [44.950102s] ... ok
+{34} tempest.scenario.test_minimum_basic.TestMinimumBasicScenario.test_minimum_basic_scenario [185.726877s] ... ok
+{0} tempest.scenario.test_network_v6.TestGettingAddress.test_multi_prefix_dhcpv6_stateless [49.044974s] ... ok
+{2} tempest.api.compute.servers.test_server_actions.ServerActionsTestJSON.test_resize_volume_backed_server_confirm [49.150547s] ... ok
+{1} tempest.scenario.test_network_basic_ops.TestNetworkBasicOps.test_update_instance_port_admin_state [42.448485s] ... ok
+{35} tempest.api.volume.test_volumes_list.VolumesListTestJSON.test_volume_list [0.061828s] ... ok
+{35} tempest.api.volume.test_volumes_list.VolumesListTestJSON.test_volume_list_by_name [0.060722s] ... ok
+{35} tempest.api.volume.test_volumes_list.VolumesListTestJSON.test_volume_list_details_by_name [0.071073s] ... ok
+{35} tempest.api.volume.test_volumes_list.VolumesListTestJSON.test_volume_list_details_pagination [0.308545s] ... ok
+{35} tempest.api.volume.test_volumes_list.VolumesListTestJSON.test_volume_list_details_with_multiple_params [0.145938s] ... ok
+{35} tempest.api.volume.test_volumes_list.VolumesListTestJSON.test_volume_list_pagination [0.246803s] ... ok
+{35} tempest.api.volume.test_volumes_list.VolumesListTestJSON.test_volume_list_param_display_name_and_status [0.055726s] ... ok
+{35} tempest.api.volume.test_volumes_list.VolumesListTestJSON.test_volume_list_with_detail_param_display_name_and_status [0.070698s] ... ok
+{35} tempest.api.volume.test_volumes_list.VolumesListTestJSON.test_volume_list_with_detail_param_marker [0.069044s] ... ok
+{35} tempest.api.volume.test_volumes_list.VolumesListTestJSON.test_volume_list_with_detail_param_metadata [0.069758s] ... ok
+{35} tempest.api.volume.test_volumes_list.VolumesListTestJSON.test_volume_list_with_details [0.081854s] ... ok
+{35} tempest.api.volume.test_volumes_list.VolumesListTestJSON.test_volume_list_with_param_metadata [0.060980s] ... ok
+{35} tempest.api.volume.test_volumes_list.VolumesListTestJSON.test_volumes_list_by_availability_zone [0.119248s] ... ok
+{35} tempest.api.volume.test_volumes_list.VolumesListTestJSON.test_volumes_list_by_bootable [0.106612s] ... ok
+{35} tempest.api.volume.test_volumes_list.VolumesListTestJSON.test_volumes_list_by_status [0.120326s] ... ok
+{35} tempest.api.volume.test_volumes_list.VolumesListTestJSON.test_volumes_list_details_by_availability_zone [0.068772s] ... ok
+{35} tempest.api.volume.test_volumes_list.VolumesListTestJSON.test_volumes_list_details_by_bootable [0.059394s] ... ok
+{35} tempest.api.volume.test_volumes_list.VolumesListTestJSON.test_volumes_list_details_by_status [0.057986s] ... ok
+{2} tempest.api.compute.servers.test_server_actions.ServerActionsTestJSON.test_shelve_paused_server [11.052913s] ... ok
+{2} tempest.api.compute.servers.test_server_actions.ServerActionsTestJSON.test_shelve_unshelve_server [11.161980s] ... ok
+{2} tempest.api.compute.servers.test_server_actions.ServerActionsTestJSON.test_stop_start_server [5.366440s] ... ok
+{1} tempest.scenario.test_network_basic_ops.TestNetworkBasicOps.test_update_router_admin_state [24.647565s] ... ok
+{2} tempest.api.compute.servers.test_server_actions.ServerActionsTestJSON.test_suspend_resume_server [5.376030s] ... ok
+{0} tempest.scenario.test_network_v6.TestGettingAddress.test_multi_prefix_slaac [46.734487s] ... ok
+{0} tempest.scenario.test_network_v6.TestGettingAddress.test_slaac_from_os [41.710988s] ... ok
+{0} setUpClass (tempest.scenario.test_volume_migrate_attached.TestVolumeMigrateRetypeAttached) ... SKIPPED: Cinder multi-backend feature disabled
+
+======
+Totals
+======
+Ran: 822 tests in 634.6140 sec.
+ - Passed: 758
+ - Skipped: 64
+ - Expected Fail: 0
+ - Unexpected Success: 0
+ - Failed: 0
+Sum of execute time for each test: 12634.8827 sec.
+
+==============
+Worker Balance
+==============
+ - Worker 0 (9 tests) => 0:10:31.202380
+ - Worker 1 (11 tests) => 0:09:35.740507
+ - Worker 2 (23 tests) => 0:09:39.434983
+ - Worker 3 (7 tests) => 0:08:29.561724
+ - Worker 4 (7 tests) => 0:08:45.863331
+ - Worker 5 (5 tests) => 0:08:23.452121
+ - Worker 6 (10 tests) => 0:06:57.956059
+ - Worker 7 (4 tests) => 0:05:51.886738
+ - Worker 8 (9 tests) => 0:05:53.849560
+ - Worker 9 (3 tests) => 0:05:35.666178
+ - Worker 10 (4 tests) => 0:05:52.379109
+ - Worker 11 (5 tests) => 0:06:12.086761
+ - Worker 12 (8 tests) => 0:05:25.260693
+ - Worker 13 (3 tests) => 0:05:29.016235
+ - Worker 14 (6 tests) => 0:04:43.329323
+ - Worker 15 (2 tests) => 0:05:33.691101
+ - Worker 16 (4 tests) => 0:04:11.220259
+ - Worker 17 (3 tests) => 0:04:41.217353
+ - Worker 18 (28 tests) => 0:08:06.714456
+ - Worker 19 (28 tests) => 0:06:16.732087
+ - Worker 20 (36 tests) => 0:06:58.843683
+ - Worker 21 (42 tests) => 0:04:51.342200
+ - Worker 22 (15 tests) => 0:05:47.056430
+ - Worker 23 (5 tests) => 0:05:00.477860
+ - Worker 24 (50 tests) => 0:06:46.550327
+ - Worker 25 (32 tests) => 0:05:46.888667
+ - Worker 26 (52 tests) => 0:06:47.074493
+ - Worker 27 (39 tests) => 0:05:56.586211
+ - Worker 28 (19 tests) => 0:04:54.554368
+ - Worker 29 (8 tests) => 0:03:52.194032
+ - Worker 30 (24 tests) => 0:05:24.600339
+ - Worker 31 (60 tests) => 0:06:29.097215
+ - Worker 32 (5 tests) => 0:06:01.316762
+ - Worker 33 (32 tests) => 0:05:14.874743
+ - Worker 34 (67 tests) => 0:08:33.317558
+ - Worker 35 (53 tests) => 0:09:09.739400
+ - Worker 36 (5 tests) => 0:05:35.140598
+ - Worker 37 (37 tests) => 0:07:16.741259
+ - Worker 38 (26 tests) => 0:06:35.061087
+ - Worker 39 (36 tests) => 0:07:32.358682
