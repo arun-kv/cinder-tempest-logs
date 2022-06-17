@@ -9,6 +9,23 @@ git pull Success
 changeBranch: change-846230-1
 git fetch origin refs/changes/30/846230/1:change-846230-1 Success
 git checkout change-846230-1 Success
-checkout patchset [ FAILED ]
+Already up to date.
+checkout patchset [ PASSED ]
+Clearing logs
+/tmp/ci-result-1655438515887
+Starting iSCSI Test configuration
+Updating cinder.conf with iSCSI driver details [ PASSED ]
+Restarting devstack services
+Cinder volume service [ PASSED ]
+Starting tempest for iSCSI driver
+Updating tempest.conf with iSCSI driver details [ PASSED ]
+Running tempest
+Starting Fiber Channel Test configuration
+Updating cinder.conf with Fiber Channel driver details [ PASSED ]
+Restarting devstack services
+Cinder volume service [ PASSED ]
+Starting tempest for Fiber Channel driver
+Updating tempest.conf with Fiber Channel driver details [ PASSED ]
+Running tempest
 Already up to date.
 Updating cinder-tempest-logs repo [ PASSED ]
