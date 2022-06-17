@@ -1,33 +1,39 @@
 Source the openrc file
 WARNING: setting legacy OS_TENANT_NAME to support cli tools.
-Patch Details: GERRIT_CHANGE_NUMBER: 846230 GERRIT_PATCHSET_NUMBER: 1 GERRIT_REFSPEC: refs/changes/30/846230/1
+Patch Details: GERRIT_CHANGE_NUMBER: 803773 GERRIT_PATCHSET_NUMBER: 4 GERRIT_REFSPEC: refs/changes/73/803773/4
 Updating cinder code
 Your branch is up to date with 'origin/master'.
 git checkout cinder master Success
 Already up to date.
 git pull Success
-changeBranch: change-846230-1
-git fetch origin refs/changes/30/846230/1:change-846230-1 Success
-git checkout change-846230-1 Success
+changeBranch: change-803773-4
+git fetch origin refs/changes/73/803773/4:change-803773-4 Failed
+checkout patchset [ FAILED ]
 Already up to date.
-checkout patchset [ PASSED ]
-Clearing logs
-/tmp/ci-result-1655438515888
-Starting iSCSI Test configuration
-Updating cinder.conf with iSCSI driver details [ PASSED ]
-Restarting devstack services
-Cinder volume service [ PASSED ]
-Starting tempest for iSCSI driver
-Updating tempest.conf with iSCSI driver details [ PASSED ]
-Running tempest
-Tempest DataCore iSCSI Driver [ FAILED ]
+Updating cinder-tempest-logs repo [ PASSED ]
+Copying logs to cinder-tempest-logs repo [ PASSED ]
+ci-result-1654161286683
+rm 'ci-result-1654161286683/cinder_volume.log'
+rm 'ci-result-1654161286683/fc_cinder.conf'
+rm 'ci-result-1654161286683/fc_driver_test.log'
+rm 'ci-result-1654161286683/fc_tempest.conf'
+rm 'ci-result-1654161286683/iscsi_cindeTempest DataCore iSCSI Driver [ FAILED ]
 Starting Fiber Channel Test configuration
 Updating cinder.conf with Fiber Channel driver details [ PASSED ]
 Restarting devstack services
-Cinder volume service [ PASSED ]
-Starting tempest for Fiber Channel driver
-Updating tempest.conf with Fiber Channel driver details [ PASSED ]
-Running tempest
-Tempest DataCore Fiber Channel Driver [ FAILED ]
+Cinder volume service [ FAILED ]
 Already up to date.
 Updating cinder-tempest-logs repo [ PASSED ]
+tions(-)
+ delete mode 100644 ci-result-1654161286683/cinder_volume.log
+ delete mode 100644 ci-result-1654161286683/fc_cinder.conf
+ delete mode 100644 ci-result-1654161286683/fc_driver_test.log
+ delete mode 100644 ci-result-1654161286683/fc_tempest.conf
+ delete mode 100644 ci-result-1654161286683/iscsi_cinder.conf
+ delete mode 100644 ci-result-1654161286683/iscsi_driver_test.log
+ delete mode 100644 ci-result-1654161286683/iscsi_tempest.conf
+ delete mode 100644 ci-result-1654161286683/test_details
+ create mode 100644 ci-result-1655450401292/cinder_volume.log
+ create mode 100644 ci-result-1655450401292/console.log
+Git commit [ PASSED ]
+Git push [ PASSED ]
