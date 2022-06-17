@@ -1,8 +1,0 @@
-Source the openrc file
-WARNING: setting legacy OS_TENANT_NAME to support cli tools.
-Patch Details: GERRIT_CHANGE_NUMBER: 846230 GERRIT_PATCHSET_NUMBER: 1 GERRIT_REFSPEC: refs/changes/30/846230/1
-Updating cinder code
-checkout patchset [ FAILED ]
-error_check: calling upload_logs_to_git
-Already up to date.
-Updating cinder-tempest-logs repo [ PASSED ]
