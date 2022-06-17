@@ -20,7 +20,7 @@ Cinder volume service [ PASSED ]
 Starting tempest for iSCSI driver
 Updating tempest.conf with iSCSI driver details [ PASSED ]
 Running tempest
-Tempest DataCore iSCSI Driver [ FAILED ]
+Tempest DataCore iSCSI Driver [ PASSED ]
 Starting Fiber Channel Test configuration
 Updating cinder.conf with Fiber Channel driver details [ PASSED ]
 Restarting devstack services
