@@ -1,17 +1,17 @@
-{0} tempest.api.volume.admin.test_snapshot_manage.SnapshotManageAdminTest.test_unmanage_manage_snapshot [22.361346s] ... ok
+{0} tempest.api.volume.admin.test_snapshot_manage.SnapshotManageAdminTest.test_unmanage_manage_snapshot [22.306899s] ... ok
 
 ======
 Totals
 ======
-Ran: 1 tests in 22.3613 sec.
+Ran: 1 tests in 22.3069 sec.
  - Passed: 1
  - Skipped: 0
  - Expected Fail: 0
  - Unexpected Success: 0
  - Failed: 0
-Sum of execute time for each test: 22.3613 sec.
+Sum of execute time for each test: 22.3069 sec.
 
 ==============
 Worker Balance
 ==============
- - Worker 0 (1 tests) => 0:00:22.361346
+ - Worker 0 (1 tests) => 0:00:22.306899
