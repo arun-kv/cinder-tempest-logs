@@ -1,0 +1,21 @@
+Source the openrc file
+WARNING: setting legacy OS_TENANT_NAME to support cli tools.
+Patch Details: GERRIT_CHANGE_NUMBER: 836996 GERRIT_PATCHSET_NUMBER: 36 GERRIT_REFSPEC: refs/changes/96/836996/36
+Updating cinder code
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+git checkout cinder master Success
+From https://opendev.org/openstack/cinder
+   733814fda..90e14e662  master     -> origin/master
+Updating 733814fda..90e14e662
+Fast-forward
+ .../dell_emc/powermax/test_powermax_rest.py        | 49 ++++++++++++++++++++++
+ cinder/volume/drivers/dell_emc/powermax/rest.py    |  2 +
+ 2 files changed, 51 insertions(+)
+git pull Success
+changeBranch: change-836996-36
+fatal: couldn't find remote ref refs/changes/96/836996/36
+git fetch origin refs/changes/96/836996/36:change-836996-36 Failed
+checkout patchset [ FAILED ]
+Already up to date.
+Updating cinder-tempest-logs repo [ PASSED ]
