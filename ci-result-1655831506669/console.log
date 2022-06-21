@@ -1,0 +1,26 @@
+Source the openrc file
+WARNING: setting legacy OS_TENANT_NAME to support cli tools.
+Patch Details: GERRIT_CHANGE_NUMBER: 831247 GERRIT_PATCHSET_NUMBER: 19 GERRIT_REFSPEC: refs/changes/47/831247/19
+Updating cinder code
+Waiting for patchset. FROM_JENKINS: 1042467FROM_JENKINS
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+git checkout cinder master Success
+Already up to date.
+git pull Success
+changeBranch: change-831247-19
+From https://opendev.org/openstack/cinder
+ * [new ref]             refs/changes/47/831247/19 -> change-831247-19
+git fetch origin refs/changes/47/831247/19:change-831247-19 Success
+Switched to branch 'change-831247-19'
+git checkout change-831247-19 Success
+Already up to date.
+checkout patchset [ PASSED ]
+Clearing logs
+/tmp/ci-result-1655831506669
+Starting iSCSI Test configuration
+Updating cinder.conf with iSCSI driver details [ PASSED ]
+Restarting devstack services
+Cinder volume service [ FAILED ]
+Already up to date.
+Updating cinder-tempest-logs repo [ PASSED ]
