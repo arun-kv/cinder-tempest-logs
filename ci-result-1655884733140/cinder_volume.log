@@ -1,105 +1,44 @@
--- Logs begin at Wed 2022-06-22 13:31:02 IST, end at Wed 2022-06-22 13:32:18 IST. --
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: DEBUG oslo_concurrency.lockutils [-] Acquired lock "singleton_lock" {{(pid=1201024) lock /usr/local/lib/python3.8/dist-packages/oslo_concurrency/lockutils.py:294}}
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: DEBUG oslo_concurrency.lockutils [-] Releasing lock "singleton_lock" {{(pid=1201024) lock /usr/local/lib/python3.8/dist-packages/oslo_concurrency/lockutils.py:312}}
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: DEBUG oslo_db.sqlalchemy.engines [None req-e30e20c1-8eeb-4cc9-83d5-e8fed70a2d3d None None] MySQL server mode set to STRICT_TRANS_TABLES,STRICT_ALL_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,TRADITIONAL,NO_ENGINE_SUBSTITUTION {{(pid=1201024) _check_effective_sql_mode /usr/local/lib/python3.8/dist-packages/oslo_db/sqlalchemy/engines.py:314}}
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: INFO cinder.rpc [None req-e30e20c1-8eeb-4cc9-83d5-e8fed70a2d3d None None] Automatically selected cinder-scheduler objects version 1.39 as minimum service version.
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: INFO cinder.rpc [None req-e30e20c1-8eeb-4cc9-83d5-e8fed70a2d3d None None] Automatically selected cinder-scheduler RPC version 3.12 as minimum service version.
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: DEBUG oslo_db.sqlalchemy.engines [None req-e30e20c1-8eeb-4cc9-83d5-e8fed70a2d3d None None] MySQL server mode set to STRICT_TRANS_TABLES,STRICT_ALL_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,TRADITIONAL,NO_ENGINE_SUBSTITUTION {{(pid=1201024) _check_effective_sql_mode /usr/local/lib/python3.8/dist-packages/oslo_db/sqlalchemy/engines.py:314}}
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: INFO cinder.volume.manager [None req-e30e20c1-8eeb-4cc9-83d5-e8fed70a2d3d None None] Determined volume DB was not empty at startup.
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: DEBUG cinder.volume.manager [None req-e30e20c1-8eeb-4cc9-83d5-e8fed70a2d3d None None] Cinder Volume DB check: vol_db_empty=False {{(pid=1201024) __init__ /opt/stack/cinder/cinder/volume/manager.py:290}}
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: WARNING stevedore.named [None req-e30e20c1-8eeb-4cc9-83d5-e8fed70a2d3d None None] Could not load cinder.keymgr.conf_key_mgr.ConfKeyManager
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: WARNING castellan.key_manager [None req-e30e20c1-8eeb-4cc9-83d5-e8fed70a2d3d None None] Deprecation Warning : cinder.keymgr.conf_key_mgr.ConfKeyManager is not a stevedore based driver, trying to load it as a class: stevedore.exception.NoMatches: No 'castellan.drivers' driver found, looking for 'cinder.keymgr.conf_key_mgr.ConfKeyManager'
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: WARNING cinder.keymgr.conf_key_mgr [None req-e30e20c1-8eeb-4cc9-83d5-e8fed70a2d3d None None] This key manager is insecure and is not recommended for production deployments: stevedore.exception.NoMatches: No 'castellan.drivers' driver found, looking for 'cinder.keymgr.conf_key_mgr.ConfKeyManager'
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume [None req-e30e20c1-8eeb-4cc9-83d5-e8fed70a2d3d None None] Volume service hostgroup@datacore_iscsi1 failed to start.: ModuleNotFoundError: No module named 'cinder.volume.drivers.datacore.iscsi'
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume Traceback (most recent call last):
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume   File "/opt/stack/cinder/cinder/cmd/volume.py", line 99, in _launch_service
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume     server = service.Service.create(host=host,
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume   File "/opt/stack/cinder/cinder/service.py", line 394, in create
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume     service_obj = cls(host, binary, topic, manager,
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume   File "/opt/stack/cinder/cinder/service.py", line 152, in __init__
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume     self.manager = manager_class(host=self.host,
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume   File "/opt/stack/cinder/cinder/volume/manager.py", line 313, in __init__
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume     self.driver = importutils.import_object(
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/oslo_utils/importutils.py", line 44, in import_object
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume     return import_class(import_str)(*args, **kwargs)
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/oslo_utils/importutils.py", line 30, in import_class
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume     __import__(mod_str)
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume ModuleNotFoundError: No module named 'cinder.volume.drivers.datacore.iscsi'
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume 
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: DEBUG oslo_db.sqlalchemy.engines [None req-e30e20c1-8eeb-4cc9-83d5-e8fed70a2d3d None None] MySQL server mode set to STRICT_TRANS_TABLES,STRICT_ALL_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,TRADITIONAL,NO_ENGINE_SUBSTITUTION {{(pid=1201024) _check_effective_sql_mode /usr/local/lib/python3.8/dist-packages/oslo_db/sqlalchemy/engines.py:314}}
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: INFO cinder.volume.manager [None req-e30e20c1-8eeb-4cc9-83d5-e8fed70a2d3d None None] Determined volume DB was not empty at startup.
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: DEBUG cinder.volume.manager [None req-e30e20c1-8eeb-4cc9-83d5-e8fed70a2d3d None None] Cinder Volume DB check: vol_db_empty=False {{(pid=1201024) __init__ /opt/stack/cinder/cinder/volume/manager.py:290}}
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: WARNING stevedore.named [None req-e30e20c1-8eeb-4cc9-83d5-e8fed70a2d3d None None] Could not load cinder.keymgr.conf_key_mgr.ConfKeyManager
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: WARNING castellan.key_manager [None req-e30e20c1-8eeb-4cc9-83d5-e8fed70a2d3d None None] Deprecation Warning : cinder.keymgr.conf_key_mgr.ConfKeyManager is not a stevedore based driver, trying to load it as a class: stevedore.exception.NoMatches: No 'castellan.drivers' driver found, looking for 'cinder.keymgr.conf_key_mgr.ConfKeyManager'
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume [None req-e30e20c1-8eeb-4cc9-83d5-e8fed70a2d3d None None] Volume service hostgroup@datacore_fc1 failed to start.: ModuleNotFoundError: No module named 'cinder.volume.drivers.datacore.fc'
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume Traceback (most recent call last):
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume   File "/opt/stack/cinder/cinder/cmd/volume.py", line 99, in _launch_service
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume     server = service.Service.create(host=host,
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume   File "/opt/stack/cinder/cinder/service.py", line 394, in create
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume     service_obj = cls(host, binary, topic, manager,
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume   File "/opt/stack/cinder/cinder/service.py", line 152, in __init__
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume     self.manager = manager_class(host=self.host,
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume   File "/opt/stack/cinder/cinder/volume/manager.py", line 313, in __init__
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume     self.driver = importutils.import_object(
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/oslo_utils/importutils.py", line 44, in import_object
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume     return import_class(import_str)(*args, **kwargs)
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/oslo_utils/importutils.py", line 30, in import_class
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume     __import__(mod_str)
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume ModuleNotFoundError: No module named 'cinder.volume.drivers.datacore.fc'
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume 
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: ERROR cinder.cmd.volume [None req-e30e20c1-8eeb-4cc9-83d5-e8fed70a2d3d None None] No volume service(s) started successfully, terminating.
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: /usr/lib/python3/dist-packages/secretstorage/dhcrypto.py:15: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]:   from cryptography.utils import int_from_bytes
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: /usr/lib/python3/dist-packages/secretstorage/util.py:19: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]:   from cryptography.utils import int_from_bytes
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: /opt/stack/cinder/cinder/db/sqlalchemy/models.py:152: SAWarning: implicitly coercing SELECT object to scalar subquery; please use the .scalar_subquery() method to produce a scalar subquery.
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]:   last_heartbeat = column_property(
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: /opt/stack/cinder/cinder/db/sqlalchemy/models.py:160: SAWarning: implicitly coercing SELECT object to scalar subquery; please use the .scalar_subquery() method to produce a scalar subquery.
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]:   num_hosts = column_property(
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]: /opt/stack/cinder/cinder/db/sqlalchemy/models.py:169: SAWarning: implicitly coercing SELECT object to scalar subquery; please use the .scalar_subquery() method to produce a scalar subquery.
-Jun 22 13:31:03 datacore-PowerEdge-R740 cinder-volume[1201024]:   num_down_hosts = column_property(
-Jun 22 13:31:04 datacore-PowerEdge-R740 systemd[1]: devstack@c-vol.service: Main process exited, code=exited, status=1/FAILURE
-Jun 22 13:31:04 datacore-PowerEdge-R740 systemd[1]: devstack@c-vol.service: Failed with result 'exit-code'.
-Jun 22 13:31:16 datacore-PowerEdge-R740 systemd[1]: Started Devstack devstack@c-vol.service.
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: DEBUG oslo_concurrency.lockutils [-] Acquired lock "singleton_lock" {{(pid=1201557) lock /usr/local/lib/python3.8/dist-packages/oslo_concurrency/lockutils.py:294}}
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: DEBUG oslo_concurrency.lockutils [-] Releasing lock "singleton_lock" {{(pid=1201557) lock /usr/local/lib/python3.8/dist-packages/oslo_concurrency/lockutils.py:312}}
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: INFO dbcounter [None req-39f5d930-9244-4b82-aaa8-d67db8e015c8 None None] Registered counter for database cinder
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: DEBUG oslo_db.sqlalchemy.engines [None req-39f5d930-9244-4b82-aaa8-d67db8e015c8 None None] MySQL server mode set to STRICT_TRANS_TABLES,STRICT_ALL_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,TRADITIONAL,NO_ENGINE_SUBSTITUTION {{(pid=1201557) _check_effective_sql_mode /usr/local/lib/python3.8/dist-packages/oslo_db/sqlalchemy/engines.py:314}}
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: DEBUG dbcounter [-] [1201557] Writer thread running {{(pid=1201557) stat_writer /usr/local/lib/python3.8/dist-packages/dbcounter.py:99}}
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: INFO cinder.rpc [None req-39f5d930-9244-4b82-aaa8-d67db8e015c8 None None] Automatically selected cinder-scheduler objects version 1.39 as minimum service version.
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: INFO cinder.rpc [None req-39f5d930-9244-4b82-aaa8-d67db8e015c8 None None] Automatically selected cinder-scheduler RPC version 3.12 as minimum service version.
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: DEBUG oslo_db.sqlalchemy.engines [None req-39f5d930-9244-4b82-aaa8-d67db8e015c8 None None] MySQL server mode set to STRICT_TRANS_TABLES,STRICT_ALL_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,TRADITIONAL,NO_ENGINE_SUBSTITUTION {{(pid=1201557) _check_effective_sql_mode /usr/local/lib/python3.8/dist-packages/oslo_db/sqlalchemy/engines.py:314}}
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: INFO cinder.volume.manager [None req-39f5d930-9244-4b82-aaa8-d67db8e015c8 None None] Determined volume DB was not empty at startup.
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: DEBUG cinder.volume.manager [None req-39f5d930-9244-4b82-aaa8-d67db8e015c8 None None] Cinder Volume DB check: vol_db_empty=False {{(pid=1201557) __init__ /opt/stack/cinder/cinder/volume/manager.py:290}}
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: WARNING stevedore.named [None req-39f5d930-9244-4b82-aaa8-d67db8e015c8 None None] Could not load cinder.keymgr.conf_key_mgr.ConfKeyManager
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: WARNING castellan.key_manager [None req-39f5d930-9244-4b82-aaa8-d67db8e015c8 None None] Deprecation Warning : cinder.keymgr.conf_key_mgr.ConfKeyManager is not a stevedore based driver, trying to load it as a class: stevedore.exception.NoMatches: No 'castellan.drivers' driver found, looking for 'cinder.keymgr.conf_key_mgr.ConfKeyManager'
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: WARNING cinder.keymgr.conf_key_mgr [None req-39f5d930-9244-4b82-aaa8-d67db8e015c8 None None] This key manager is insecure and is not recommended for production deployments: stevedore.exception.NoMatches: No 'castellan.drivers' driver found, looking for 'cinder.keymgr.conf_key_mgr.ConfKeyManager'
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: ERROR cinder.cmd.volume [None req-39f5d930-9244-4b82-aaa8-d67db8e015c8 None None] Volume service hostgroup@datacore_iscsi1 failed to start.: ModuleNotFoundError: No module named 'cinder.volume.drivers.datacore.iscsi'
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: ERROR cinder.cmd.volume Traceback (most recent call last):
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: ERROR cinder.cmd.volume   File "/opt/stack/cinder/cinder/cmd/volume.py", line 99, in _launch_service
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: ERROR cinder.cmd.volume     server = service.Service.create(host=host,
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: ERROR cinder.cmd.volume   File "/opt/stack/cinder/cinder/service.py", line 394, in create
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: ERROR cinder.cmd.volume     service_obj = cls(host, binary, topic, manager,
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: ERROR cinder.cmd.volume   File "/opt/stack/cinder/cinder/service.py", line 152, in __init__
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: ERROR cinder.cmd.volume     self.manager = manager_class(host=self.host,
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: ERROR cinder.cmd.volume   File "/opt/stack/cinder/cinder/volume/manager.py", line 313, in __init__
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: ERROR cinder.cmd.volume     self.driver = importutils.import_object(
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/oslo_utils/importutils.py", line 44, in import_object
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: ERROR cinder.cmd.volume     return import_class(import_str)(*args, **kwargs)
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/oslo_utils/importutils.py", line 30, in import_class
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: ERROR cinder.cmd.volume     __import__(mod_str)
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: ERROR cinder.cmd.volume ModuleNotFoundError: No module named 'cinder.volume.drivers.datacore.iscsi'
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: ERROR cinder.cmd.volume 
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: ERROR cinder.cmd.volume [None req-39f5d930-9244-4b82-aaa8-d67db8e015c8 None None] No volume service(s) started successfully, terminating.
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: /usr/lib/python3/dist-packages/secretstorage/dhcrypto.py:15: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]:   from cryptography.utils import int_from_bytes
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: /usr/lib/python3/dist-packages/secretstorage/util.py:19: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]:   from cryptography.utils import int_from_bytes
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: /opt/stack/cinder/cinder/db/sqlalchemy/models.py:152: SAWarning: implicitly coercing SELECT object to scalar subquery; please use the .scalar_subquery() method to produce a scalar subquery.
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]:   last_heartbeat = column_property(
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: /opt/stack/cinder/cinder/db/sqlalchemy/models.py:160: SAWarning: implicitly coercing SELECT object to scalar subquery; please use the .scalar_subquery() method to produce a scalar subquery.
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]:   num_hosts = column_property(
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]: /opt/stack/cinder/cinder/db/sqlalchemy/models.py:169: SAWarning: implicitly coercing SELECT object to scalar subquery; please use the .scalar_subquery() method to produce a scalar subquery.
-Jun 22 13:31:18 datacore-PowerEdge-R740 cinder-volume[1201557]:   num_down_hosts = column_property(
-Jun 22 13:31:19 datacore-PowerEdge-R740 systemd[1]: devstack@c-vol.service: Main process exited, code=exited, status=1/FAILURE
-Jun 22 13:31:19 datacore-PowerEdge-R740 systemd[1]: devstack@c-vol.service: Failed with result 'exit-code'.
+-- Logs begin at Wed 2022-06-22 13:34:31 IST, end at Wed 2022-06-22 13:35:41 IST. --
+Jun 22 13:34:38 datacore-PowerEdge-R740 systemd[1]: Started Devstack devstack@c-vol.service.
+Jun 22 13:34:40 datacore-PowerEdge-R740 cinder-volume[1203609]: DEBUG oslo_concurrency.lockutils [-] Acquired lock "singleton_lock" {{(pid=1203609) lock /usr/local/lib/python3.8/dist-packages/oslo_concurrency/lockutils.py:294}}
+Jun 22 13:34:40 datacore-PowerEdge-R740 cinder-volume[1203609]: DEBUG oslo_concurrency.lockutils [-] Releasing lock "singleton_lock" {{(pid=1203609) lock /usr/local/lib/python3.8/dist-packages/oslo_concurrency/lockutils.py:312}}
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: INFO dbcounter [None req-6aea49b6-53a1-4289-a515-9973bdbb4a0e None None] Registered counter for database cinder
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: DEBUG oslo_db.sqlalchemy.engines [None req-6aea49b6-53a1-4289-a515-9973bdbb4a0e None None] MySQL server mode set to STRICT_TRANS_TABLES,STRICT_ALL_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,TRADITIONAL,NO_ENGINE_SUBSTITUTION {{(pid=1203609) _check_effective_sql_mode /usr/local/lib/python3.8/dist-packages/oslo_db/sqlalchemy/engines.py:314}}
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: DEBUG dbcounter [-] [1203609] Writer thread running {{(pid=1203609) stat_writer /usr/local/lib/python3.8/dist-packages/dbcounter.py:99}}
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: INFO cinder.rpc [None req-6aea49b6-53a1-4289-a515-9973bdbb4a0e None None] Automatically selected cinder-scheduler objects version 1.39 as minimum service version.
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: INFO cinder.rpc [None req-6aea49b6-53a1-4289-a515-9973bdbb4a0e None None] Automatically selected cinder-scheduler RPC version 3.12 as minimum service version.
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: DEBUG oslo_db.sqlalchemy.engines [None req-6aea49b6-53a1-4289-a515-9973bdbb4a0e None None] MySQL server mode set to STRICT_TRANS_TABLES,STRICT_ALL_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,TRADITIONAL,NO_ENGINE_SUBSTITUTION {{(pid=1203609) _check_effective_sql_mode /usr/local/lib/python3.8/dist-packages/oslo_db/sqlalchemy/engines.py:314}}
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: INFO cinder.volume.manager [None req-6aea49b6-53a1-4289-a515-9973bdbb4a0e None None] Determined volume DB was not empty at startup.
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: DEBUG cinder.volume.manager [None req-6aea49b6-53a1-4289-a515-9973bdbb4a0e None None] Cinder Volume DB check: vol_db_empty=False {{(pid=1203609) __init__ /opt/stack/cinder/cinder/volume/manager.py:290}}
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: WARNING stevedore.named [None req-6aea49b6-53a1-4289-a515-9973bdbb4a0e None None] Could not load cinder.keymgr.conf_key_mgr.ConfKeyManager
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: WARNING castellan.key_manager [None req-6aea49b6-53a1-4289-a515-9973bdbb4a0e None None] Deprecation Warning : cinder.keymgr.conf_key_mgr.ConfKeyManager is not a stevedore based driver, trying to load it as a class: stevedore.exception.NoMatches: No 'castellan.drivers' driver found, looking for 'cinder.keymgr.conf_key_mgr.ConfKeyManager'
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: WARNING cinder.keymgr.conf_key_mgr [None req-6aea49b6-53a1-4289-a515-9973bdbb4a0e None None] This key manager is insecure and is not recommended for production deployments: stevedore.exception.NoMatches: No 'castellan.drivers' driver found, looking for 'cinder.keymgr.conf_key_mgr.ConfKeyManager'
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: ERROR cinder.cmd.volume [None req-6aea49b6-53a1-4289-a515-9973bdbb4a0e None None] Volume service hostgroup@datacore_iscsi1 failed to start.: ModuleNotFoundError: No module named 'cinder.volume.drivers.datacore.iscsi'
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: ERROR cinder.cmd.volume Traceback (most recent call last):
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: ERROR cinder.cmd.volume   File "/opt/stack/cinder/cinder/cmd/volume.py", line 99, in _launch_service
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: ERROR cinder.cmd.volume     server = service.Service.create(host=host,
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: ERROR cinder.cmd.volume   File "/opt/stack/cinder/cinder/service.py", line 394, in create
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: ERROR cinder.cmd.volume     service_obj = cls(host, binary, topic, manager,
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: ERROR cinder.cmd.volume   File "/opt/stack/cinder/cinder/service.py", line 152, in __init__
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: ERROR cinder.cmd.volume     self.manager = manager_class(host=self.host,
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: ERROR cinder.cmd.volume   File "/opt/stack/cinder/cinder/volume/manager.py", line 313, in __init__
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: ERROR cinder.cmd.volume     self.driver = importutils.import_object(
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/oslo_utils/importutils.py", line 44, in import_object
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: ERROR cinder.cmd.volume     return import_class(import_str)(*args, **kwargs)
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/oslo_utils/importutils.py", line 30, in import_class
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: ERROR cinder.cmd.volume     __import__(mod_str)
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: ERROR cinder.cmd.volume ModuleNotFoundError: No module named 'cinder.volume.drivers.datacore.iscsi'
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: ERROR cinder.cmd.volume 
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: ERROR cinder.cmd.volume [None req-6aea49b6-53a1-4289-a515-9973bdbb4a0e None None] No volume service(s) started successfully, terminating.
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: /usr/lib/python3/dist-packages/secretstorage/dhcrypto.py:15: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]:   from cryptography.utils import int_from_bytes
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: /usr/lib/python3/dist-packages/secretstorage/util.py:19: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]:   from cryptography.utils import int_from_bytes
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: /opt/stack/cinder/cinder/db/sqlalchemy/models.py:152: SAWarning: implicitly coercing SELECT object to scalar subquery; please use the .scalar_subquery() method to produce a scalar subquery.
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]:   last_heartbeat = column_property(
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: /opt/stack/cinder/cinder/db/sqlalchemy/models.py:160: SAWarning: implicitly coercing SELECT object to scalar subquery; please use the .scalar_subquery() method to produce a scalar subquery.
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]:   num_hosts = column_property(
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]: /opt/stack/cinder/cinder/db/sqlalchemy/models.py:169: SAWarning: implicitly coercing SELECT object to scalar subquery; please use the .scalar_subquery() method to produce a scalar subquery.
+Jun 22 13:34:41 datacore-PowerEdge-R740 cinder-volume[1203609]:   num_down_hosts = column_property(
+Jun 22 13:34:42 datacore-PowerEdge-R740 systemd[1]: devstack@c-vol.service: Main process exited, code=exited, status=1/FAILURE
+Jun 22 13:34:42 datacore-PowerEdge-R740 systemd[1]: devstack@c-vol.service: Failed with result 'exit-code'.
