@@ -1,0 +1,27 @@
+Source the openrc file
+WARNING: setting legacy OS_TENANT_NAME to support cli tools.
+Patch Details: GERRIT_CHANGE_NUMBER: 847189 GERRIT_PATCHSET_NUMBER: 3 GERRIT_REFSPEC: refs/changes/89/847189/3
+Updating cinder code
+Waiting for patchset. FROM_JENKINS: 1
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+git checkout cinder master Success
+Already up to date.
+git pull Success
+changeBranch: change-847189-3
+From https://opendev.org/openstack/cinder
+ * [new ref]             refs/changes/89/847189/3 -> change-847189-3
+git fetch origin refs/changes/89/847189/3:change-847189-3 Success
+Switched to branch 'change-847189-3'
+git checkout change-847189-3 Success
+Already up to date.
+checkout patchset [ PASSED ]
+Clearing logs
+/tmp/ci-result-1656085013674
+Starting iSCSI Test configuration
+Updating cinder.conf with iSCSI driver details [ PASSED ]
+ERROR: Internal Server Error (HTTP 500)
+ERROR: Internal Server Error (HTTP 500)
+Creating datacore_iscsi1 volume type [ FAILED ]
+Already up to date.
+Updating cinder-tempest-logs repo [ PASSED ]
