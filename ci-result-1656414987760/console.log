@@ -1,6 +1,6 @@
 Source the openrc file
 WARNING: setting legacy OS_TENANT_NAME to support cli tools.
-Patch Details: GERRIT_CHANGE_NUMBER: 847954 GERRIT_PATCHSET_NUMBER: 1 GERRIT_REFSPEC: refs/changes/54/847954/1
+Patch Details: GERRIT_CHANGE_NUMBER: 847953 GERRIT_PATCHSET_NUMBER: 1 GERRIT_REFSPEC: refs/changes/53/847953/1
 Fetching latest cinder patch
 Waiting for patchset. FROM_JENKINS: 1
 Switched to branch 'master'
@@ -8,12 +8,12 @@ Your branch is up to date with 'origin/master'.
 git checkout cinder master Success
 Already up to date.
 git pull Success
-changeBranch: change-847954-1
+changeBranch: change-847953-1
 From https://opendev.org/openstack/cinder
- * [new ref]             refs/changes/54/847954/1 -> change-847954-1
-git fetch origin refs/changes/54/847954/1:change-847954-1 Success
-Switched to branch 'change-847954-1'
-git checkout change-847954-1 Success
+ * [new ref]             refs/changes/53/847953/1 -> change-847953-1
+git fetch origin refs/changes/53/847953/1:change-847953-1 Success
+Switched to branch 'change-847953-1'
+git checkout change-847953-1 Success
 Already up to date.
 checkout patchset [ PASSED ]
 Updating tempest config
