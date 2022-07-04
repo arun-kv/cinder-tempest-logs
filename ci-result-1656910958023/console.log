@@ -1,0 +1,68 @@
+Source the openrc file
+WARNING: setting legacy OS_TENANT_NAME to support cli tools.
+Patch Details: GERRIT_CHANGE_NUMBER: 836996 GERRIT_PATCHSET_NUMBER: 39 GERRIT_REFSPEC: refs/changes/96/836996/39
+Fetching latest cinder patch
+Waiting for patchset. FROM_JENKINS: 1
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+git checkout cinder master Success
+From https://opendev.org/openstack/cinder
+   89eaf24c6..441ad3c5a  master     -> origin/master
+Updating 89eaf24c6..441ad3c5a
+Fast-forward
+ .../drivers/dell_emc/powermax/powermax_data.py     |  8 ++++++
+ .../dell_emc/powermax/test_powermax_metadata.py    | 31 ++++++++++++++++++++++
+ .../dell_emc/powermax/test_powermax_provision.py   |  2 +-
+ .../dell_emc/powermax/test_powermax_rest.py        | 27 ++++++++++++-------
+ .../volume/drivers/dell_emc/powermax/metadata.py   | 16 +++++------
+ .../volume/drivers/dell_emc/powermax/provision.py  |  2 +-
+ cinder/volume/drivers/dell_emc/powermax/rest.py    | 10 +++++++
+ 7 files changed, 77 insertions(+), 19 deletions(-)
+git pull Success
+changeBranch: change-836996-39
+From https://opendev.org/openstack/cinder
+ * [new ref]             refs/changes/96/836996/39 -> change-836996-39
+git fetch origin refs/changes/96/836996/39:change-836996-39 Success
+Switched to branch 'change-836996-39'
+git checkout change-836996-39 Success
+From https://opendev.org/openstack/tempest
+   9fe5d3826..7efe29cf1  master     -> origin/master
+ * [new tag]             31.1.0     -> 31.1.0
+Updating 9fe5d3826..7efe29cf1
+Fast-forward
+ releasenotes/source/index.rst   | 1 +
+ releasenotes/source/v31.1.0.rst | 5 +++++
+ tempest/scenario/manager.py     | 4 +++-
+ 3 files changed, 9 insertions(+), 1 deletion(-)
+ create mode 100644 releasenotes/source/v31.1.0.rst
+checkout patchset [ PASSED ]
+Updating tempest config
+WARNING: setting legacy OS_TENANT_NAME to support cli tools.
+/usr/lib/python3/dist-packages/secretstorage/dhcrypto.py:15: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
+  from cryptography.utils import int_from_bytes
+/usr/lib/python3/dist-packages/secretstorage/util.py:19: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
+  from cryptography.utils import int_from_bytes
+/usr/lib/python3/dist-packages/secretstorage/dhcrypto.py:15: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
+  from cryptography.utils import int_from_bytes
+/usr/lib/python3/dist-packages/secretstorage/util.py:19: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
+  from cryptography.utils import int_from_bytes
+Clearing logs
+/tmp/ci-result-1656910958023
+Starting iSCSI Test configuration
+Updating cinder.conf with iSCSI driver details [ PASSED ]
+Restarting devstack services
+Cinder volume service [ PASSED ]
+Starting tempest for iSCSI driver
+Updating tempest.conf with iSCSI driver details [ PASSED ]
+Running tempest
+Tempest DataCore iSCSI Driver [ PASSED ]
+Starting Fiber Channel Test configuration
+Updating cinder.conf with Fiber Channel driver details [ PASSED ]
+Restarting devstack services
+Cinder volume service [ PASSED ]
+Starting tempest for Fiber Channel driver
+Updating tempest.conf with Fiber Channel driver details [ PASSED ]
+Running tempest
+Tempest DataCore Fiber Channel Driver [ PASSED ]
+Already up to date.
+Updating cinder-tempest-logs repo [ PASSED ]
