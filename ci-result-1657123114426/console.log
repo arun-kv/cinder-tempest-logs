@@ -1,0 +1,43 @@
+Source the openrc file
+WARNING: setting legacy OS_TENANT_NAME to support cli tools.
+Patch Details: GERRIT_CHANGE_NUMBER: 806605 GERRIT_PATCHSET_NUMBER: 5 GERRIT_REFSPEC: refs/changes/05/806605/5
+Fetching latest cinder patch
+Waiting for patchset. FROM_JENKINS: 1
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+git checkout cinder master Success
+From https://opendev.org/openstack/cinder
+   2fb06f13f..13a57cfea  master     -> origin/master
+Updating 2fb06f13f..13a57cfea
+Fast-forward
+ cinder/api/common.py | 102 ++++++++++++++++++++++++++++++++++++---------------
+ mypy-files.txt       |   1 +
+ 2 files changed, 73 insertions(+), 30 deletions(-)
+git pull Success
+changeBranch: change-806605-5
+From https://opendev.org/openstack/cinder
+ * [new ref]             refs/changes/05/806605/5 -> change-806605-5
+git fetch origin refs/changes/05/806605/5:change-806605-5 Success
+Switched to branch 'change-806605-5'
+git checkout change-806605-5 Success
+Already up to date.
+checkout patchset [ PASSED ]
+Updating tempest config
+WARNING: setting legacy OS_TENANT_NAME to support cli tools.
+/usr/lib/python3/dist-packages/secretstorage/dhcrypto.py:15: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
+  from cryptography.utils import int_from_bytes
+/usr/lib/python3/dist-packages/secretstorage/util.py:19: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
+  from cryptography.utils import int_from_bytes
+/usr/lib/python3/dist-packages/secretstorage/dhcrypto.py:15: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
+  from cryptography.utils import int_from_bytes
+/usr/lib/python3/dist-packages/secretstorage/util.py:19: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
+  from cryptography.utils import int_from_bytes
+Clearing logs
+/tmp/ci-result-1657123114426
+Starting iSCSI Test configuration
+Updating cinder.conf with iSCSI driver details [ PASSED ]
+ERROR: Internal Server Error (HTTP 500)
+ERROR: Internal Server Error (HTTP 500)
+Creating datacore_iscsi1 volume type [ FAILED ]
+Already up to date.
+Updating cinder-tempest-logs repo [ PASSED ]
