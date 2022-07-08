@@ -1,0 +1,16 @@
+Source the openrc file
+WARNING: setting legacy OS_TENANT_NAME to support cli tools.
+Patch Details: GERRIT_CHANGE_NUMBER: 842905 GERRIT_PATCHSET_NUMBER: 2 GERRIT_REFSPEC: refs/changes/05/842905/2
+Fetching latest cinder patch
+Waiting for patchset. FROM_JENKINS: 1
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+git checkout cinder master Success
+Already up to date.
+git pull Success
+changeBranch: change-842905-2
+fatal: unable to access 'https://opendev.org/openstack/cinder.git/': GnuTLS recv error (-9): Error decoding the received TLS packet.
+git fetch origin refs/changes/05/842905/2:change-842905-2 Failed
+checkout patchset [ FAILED ]
+Already up to date.
+Updating cinder-tempest-logs repo [ PASSED ]
