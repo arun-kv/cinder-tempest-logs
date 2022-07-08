@@ -1,4 +1,4 @@
--- Logs begin at Fri 2022-07-08 17:38:39 IST, end at Fri 2022-07-08 19:54:31 IST. --
+-- Logs begin at Fri 2022-07-08 17:38:39 IST, end at Fri 2022-07-08 19:56:11 IST. --
 Jul 08 17:38:39 datacore-PowerEdge-R740 systemd[1]: devstack@c-vol.service: Main process exited, code=exited, status=1/FAILURE
 Jul 08 17:38:39 datacore-PowerEdge-R740 systemd[1]: devstack@c-vol.service: Failed with result 'exit-code'.
 Jul 08 17:38:54 datacore-PowerEdge-R740 systemd[1]: Started Devstack devstack@c-vol.service.
