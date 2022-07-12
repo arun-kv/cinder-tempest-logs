@@ -1,24 +1,24 @@
 Source the openrc file
 WARNING: setting legacy OS_TENANT_NAME to support cli tools.
-Patch Details: GERRIT_CHANGE_NUMBER: 844563 GERRIT_PATCHSET_NUMBER: 4 GERRIT_REFSPEC: refs/changes/63/844563/4
+Patch Details: GERRIT_CHANGE_NUMBER: 802955 GERRIT_PATCHSET_NUMBER: 7 GERRIT_REFSPEC: refs/changes/55/802955/7
 Fetching latest cinder patch
 Waiting for patchset. FROM_JENKINS: 1
-Already on 'master'
+Switched to branch 'master'
 Your branch is up to date with 'origin/master'.
 git checkout cinder master Success
 From https://opendev.org/openstack/cinder
-   db95ad277..89eaf24c6  master     -> origin/master
-Updating db95ad277..89eaf24c6
+   20b6983bd..84fd59865  master     -> origin/master
+Updating 20b6983bd..84fd59865
 Fast-forward
- cinder/scheduler/host_manager.py | 2 ++
- 1 file changed, 2 insertions(+)
+ .pylintrc | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
 git pull Success
-changeBranch: change-844563-4
+changeBranch: change-802955-7
 From https://opendev.org/openstack/cinder
- * [new ref]             refs/changes/63/844563/4 -> change-844563-4
-git fetch origin refs/changes/63/844563/4:change-844563-4 Success
-Switched to branch 'change-844563-4'
-git checkout change-844563-4 Success
+ * [new ref]             refs/changes/55/802955/7 -> change-802955-7
+git fetch origin refs/changes/55/802955/7:change-802955-7 Success
+Switched to branch 'change-802955-7'
+git checkout change-802955-7 Success
 Already up to date.
 checkout patchset [ PASSED ]
 Updating tempest config
@@ -32,7 +32,7 @@ WARNING: setting legacy OS_TENANT_NAME to support cli tools.
 /usr/lib/python3/dist-packages/secretstorage/util.py:19: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
   from cryptography.utils import int_from_bytes
 Clearing logs
-/tmp/ci-result-1656532116394
+/tmp/ci-result-1657660946638
 Starting iSCSI Test configuration
 Updating cinder.conf with iSCSI driver details [ PASSED ]
 Restarting devstack services
