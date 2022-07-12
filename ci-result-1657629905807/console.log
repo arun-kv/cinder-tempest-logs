@@ -1,6 +1,6 @@
 Source the openrc file
 WARNING: setting legacy OS_TENANT_NAME to support cli tools.
-Patch Details: GERRIT_CHANGE_NUMBER: 768105 GERRIT_PATCHSET_NUMBER: 15 GERRIT_REFSPEC: refs/changes/05/768105/15
+Patch Details: GERRIT_CHANGE_NUMBER: 820027 GERRIT_PATCHSET_NUMBER: 10 GERRIT_REFSPEC: refs/changes/27/820027/10
 Fetching latest cinder patch
 Waiting for patchset. FROM_JENKINS: 1
 Switched to branch 'master'
@@ -8,12 +8,12 @@ Your branch is up to date with 'origin/master'.
 git checkout cinder master Success
 Already up to date.
 git pull Success
-changeBranch: change-768105-15
+changeBranch: change-820027-10
 From https://opendev.org/openstack/cinder
- * [new ref]             refs/changes/05/768105/15 -> change-768105-15
-git fetch origin refs/changes/05/768105/15:change-768105-15 Success
-Switched to branch 'change-768105-15'
-git checkout change-768105-15 Success
+ * [new ref]             refs/changes/27/820027/10 -> change-820027-10
+git fetch origin refs/changes/27/820027/10:change-820027-10 Success
+Switched to branch 'change-820027-10'
+git checkout change-820027-10 Success
 Already up to date.
 checkout patchset [ PASSED ]
 Updating tempest config
@@ -27,7 +27,7 @@ WARNING: setting legacy OS_TENANT_NAME to support cli tools.
 /usr/lib/python3/dist-packages/secretstorage/util.py:19: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
   from cryptography.utils import int_from_bytes
 Clearing logs
-/tmp/ci-result-1656492150127
+/tmp/ci-result-1657629905807
 Starting iSCSI Test configuration
 Updating cinder.conf with iSCSI driver details [ PASSED ]
 Restarting devstack services
