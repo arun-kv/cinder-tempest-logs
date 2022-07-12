@@ -1,0 +1,88 @@
+Source the openrc file
+WARNING: setting legacy OS_TENANT_NAME to support cli tools.
+Patch Details: GERRIT_CHANGE_NUMBER: 848147 GERRIT_PATCHSET_NUMBER: 2 GERRIT_REFSPEC: refs/changes/47/848147/2
+Fetching latest cinder patch
+Waiting for patchset. FROM_JENKINS: 1
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+git checkout cinder master Success
+From https://opendev.org/openstack/cinder
+   b103d7a2a..20b6983bd  master     -> origin/master
+Updating b103d7a2a..20b6983bd
+Fast-forward
+ cinder/opts.py                                     |    9 +
+ .../tests/unit/volume/drivers/datacore/__init__.py |    0
+ .../volume/drivers/datacore/test_datacore_api.py   |  732 ++++++++++++++
+ .../drivers/datacore/test_datacore_driver.py       |  773 ++++++++++++++
+ .../volume/drivers/datacore/test_datacore_fc.py    |  291 ++++++
+ .../volume/drivers/datacore/test_datacore_iscsi.py |  587 +++++++++++
+ .../drivers/datacore/test_datacore_passwd.py       |  288 ++++++
+ .../volume/drivers/datacore/test_datacore_utils.py |   78 ++
+ cinder/volume/drivers/datacore/api.py              | 1065 ++++++++++++++++++++
+ cinder/volume/drivers/datacore/driver.py           |  845 ++++++++++++++++
+ cinder/volume/drivers/datacore/exception.py        |   36 +
+ cinder/volume/drivers/datacore/fc.py               |  376 +++++++
+ cinder/volume/drivers/datacore/iscsi.py            |  446 ++++++++
+ cinder/volume/drivers/datacore/passwd.py           |  165 +++
+ cinder/volume/drivers/datacore/utils.py            |   72 ++
+ .../drivers/datacore-volume-driver.rst             |  370 +++++++
+ doc/source/reference/support-matrix.ini            |   13 +
+ driver-requirements.txt                            |    3 +
+ ...dd-datacore-volume-driver-5c1802798425acc1.yaml |    4 +
+ setup.cfg                                          |    4 +-
+ 20 files changed, 6155 insertions(+), 2 deletions(-)
+ create mode 100644 cinder/tests/unit/volume/drivers/datacore/__init__.py
+ create mode 100644 cinder/tests/unit/volume/drivers/datacore/test_datacore_api.py
+ create mode 100644 cinder/tests/unit/volume/drivers/datacore/test_datacore_driver.py
+ create mode 100644 cinder/tests/unit/volume/drivers/datacore/test_datacore_fc.py
+ create mode 100644 cinder/tests/unit/volume/drivers/datacore/test_datacore_iscsi.py
+ create mode 100644 cinder/tests/unit/volume/drivers/datacore/test_datacore_passwd.py
+ create mode 100644 cinder/tests/unit/volume/drivers/datacore/test_datacore_utils.py
+ create mode 100644 cinder/volume/drivers/datacore/api.py
+ create mode 100644 cinder/volume/drivers/datacore/driver.py
+ create mode 100644 cinder/volume/drivers/datacore/exception.py
+ create mode 100644 cinder/volume/drivers/datacore/fc.py
+ create mode 100644 cinder/volume/drivers/datacore/iscsi.py
+ create mode 100644 cinder/volume/drivers/datacore/passwd.py
+ create mode 100644 cinder/volume/drivers/datacore/utils.py
+ create mode 100644 doc/source/configuration/block-storage/drivers/datacore-volume-driver.rst
+ create mode 100644 releasenotes/notes/add-datacore-volume-driver-5c1802798425acc1.yaml
+git pull Success
+changeBranch: change-848147-2
+From https://opendev.org/openstack/cinder
+ * [new ref]             refs/changes/47/848147/2 -> change-848147-2
+git fetch origin refs/changes/47/848147/2:change-848147-2 Success
+Switched to branch 'change-848147-2'
+git checkout change-848147-2 Success
+Already up to date.
+checkout patchset [ PASSED ]
+Updating tempest config
+WARNING: setting legacy OS_TENANT_NAME to support cli tools.
+/usr/lib/python3/dist-packages/secretstorage/dhcrypto.py:15: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
+  from cryptography.utils import int_from_bytes
+/usr/lib/python3/dist-packages/secretstorage/util.py:19: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
+  from cryptography.utils import int_from_bytes
+/usr/lib/python3/dist-packages/secretstorage/dhcrypto.py:15: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
+  from cryptography.utils import int_from_bytes
+/usr/lib/python3/dist-packages/secretstorage/util.py:19: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
+  from cryptography.utils import int_from_bytes
+Clearing logs
+/tmp/ci-result-1657657246544
+Starting iSCSI Test configuration
+Updating cinder.conf with iSCSI driver details [ PASSED ]
+Restarting devstack services
+Cinder volume service [ PASSED ]
+Starting tempest for iSCSI driver
+Updating tempest.conf with iSCSI driver details [ PASSED ]
+Running tempest
+Tempest DataCore iSCSI Driver [ PASSED ]
+Starting Fiber Channel Test configuration
+Updating cinder.conf with Fiber Channel driver details [ PASSED ]
+Restarting devstack services
+Cinder volume service [ PASSED ]
+Starting tempest for Fiber Channel driver
+Updating tempest.conf with Fiber Channel driver details [ PASSED ]
+Running tempest
+Tempest DataCore Fiber Channel Driver [ PASSED ]
+Already up to date.
+Updating cinder-tempest-logs repo [ PASSED ]
