@@ -1,21 +1,19 @@
 Source the openrc file
 WARNING: setting legacy OS_TENANT_NAME to support cli tools.
-Patch Details: GERRIT_CHANGE_NUMBER: 848013 GERRIT_PATCHSET_NUMBER: 1 GERRIT_REFSPEC: refs/changes/13/848013/1
+Patch Details: GERRIT_CHANGE_NUMBER: 797970 GERRIT_PATCHSET_NUMBER: 4 GERRIT_REFSPEC: refs/changes/70/797970/4
 Fetching latest cinder patch
 Waiting for patchset. FROM_JENKINS: 1
-Switched to branch 'master'
+Already on 'master'
 Your branch is up to date with 'origin/master'.
 git checkout cinder master Success
-From https://opendev.org/openstack/cinder
-   eb2720645..1776695a1  stable/wallaby -> origin/stable/wallaby
 Already up to date.
 git pull Success
-changeBranch: change-848013-1
+changeBranch: change-797970-4
 From https://opendev.org/openstack/cinder
- * [new ref]             refs/changes/13/848013/1 -> change-848013-1
-git fetch origin refs/changes/13/848013/1:change-848013-1 Success
-Switched to branch 'change-848013-1'
-git checkout change-848013-1 Success
+ * [new ref]             refs/changes/70/797970/4 -> change-797970-4
+git fetch origin refs/changes/70/797970/4:change-797970-4 Success
+Switched to branch 'change-797970-4'
+git checkout change-797970-4 Success
 Already up to date.
 checkout patchset [ PASSED ]
 Updating tempest config
@@ -29,10 +27,11 @@ WARNING: setting legacy OS_TENANT_NAME to support cli tools.
 /usr/lib/python3/dist-packages/secretstorage/util.py:19: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
   from cryptography.utils import int_from_bytes
 Clearing logs
-/tmp/ci-result-1656435343373
+/tmp/ci-result-1657618030471
 Starting iSCSI Test configuration
 Updating cinder.conf with iSCSI driver details [ PASSED ]
-Restarting devstack services
-Cinder volume service [ FAILED ]
+ERROR: Internal Server Error (HTTP 500)
+ERROR: Internal Server Error (HTTP 500)
+Creating datacore_iscsi1 volume type [ FAILED ]
 Already up to date.
 Updating cinder-tempest-logs repo [ PASSED ]
