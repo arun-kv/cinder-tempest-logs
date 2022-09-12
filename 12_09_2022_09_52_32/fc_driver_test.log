@@ -1,0 +1,69 @@
+{0} setUpClass (tempest.api.volume.test_volumes_snapshots.VolumesSnapshotTestJSON) [0.000000s] ... FAILED
+
+Captured traceback:
+~~~~~~~~~~~~~~~~~~~
+    Traceback (most recent call last):
+
+      File "/opt/stack/tempest/tempest/test.py", line 168, in setUpClass
+    raise value.with_traceback(trace)
+
+      File "/opt/stack/tempest/tempest/test.py", line 161, in setUpClass
+    cls.resource_setup()
+
+      File "/opt/stack/tempest/tempest/api/volume/test_volumes_snapshots.py", line 41, in resource_setup
+    cls.volume_origin = cls.create_volume()
+
+      File "/opt/stack/tempest/tempest/api/volume/base.py", line 131, in create_volume
+    waiters.wait_for_volume_resource_status(cls.volumes_client,
+
+      File "/opt/stack/tempest/tempest/common/waiters.py", line 305, in wait_for_volume_resource_status
+    raise exceptions.VolumeResourceBuildErrorException(
+
+    tempest.exceptions.VolumeResourceBuildErrorException: volume 1ee2b635-afa0-4ed2-a44a-7df31bc343b6 failed to build and is in ERROR status
+
+
+==============================
+Failed 1 tests - output below:
+==============================
+
+setUpClass (tempest.api.volume.test_volumes_snapshots.VolumesSnapshotTestJSON)
+------------------------------------------------------------------------------
+
+Captured traceback:
+~~~~~~~~~~~~~~~~~~~
+    Traceback (most recent call last):
+
+      File "/opt/stack/tempest/tempest/test.py", line 168, in setUpClass
+    raise value.with_traceback(trace)
+
+      File "/opt/stack/tempest/tempest/test.py", line 161, in setUpClass
+    cls.resource_setup()
+
+      File "/opt/stack/tempest/tempest/api/volume/test_volumes_snapshots.py", line 41, in resource_setup
+    cls.volume_origin = cls.create_volume()
+
+      File "/opt/stack/tempest/tempest/api/volume/base.py", line 131, in create_volume
+    waiters.wait_for_volume_resource_status(cls.volumes_client,
+
+      File "/opt/stack/tempest/tempest/common/waiters.py", line 305, in wait_for_volume_resource_status
+    raise exceptions.VolumeResourceBuildErrorException(
+
+    tempest.exceptions.VolumeResourceBuildErrorException: volume 1ee2b635-afa0-4ed2-a44a-7df31bc343b6 failed to build and is in ERROR status
+
+
+
+======
+Totals
+======
+Ran: 1 tests in 0.0000 sec.
+ - Passed: 0
+ - Skipped: 0
+ - Expected Fail: 0
+ - Unexpected Success: 0
+ - Failed: 1
+Sum of execute time for each test: 0.0000 sec.
+
+==============
+Worker Balance
+==============
+ - Worker 0 (1 tests) => 0:00:00
