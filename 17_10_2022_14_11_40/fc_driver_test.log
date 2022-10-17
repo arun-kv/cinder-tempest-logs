@@ -1,0 +1,17 @@
+{0} tempest.api.volume.test_volumes_snapshots.VolumesSnapshotTestJSON.test_snapshot_create_offline_delete_online [75.543710s] ... ok
+
+======
+Totals
+======
+Ran: 1 tests in 75.5437 sec.
+ - Passed: 1
+ - Skipped: 0
+ - Expected Fail: 0
+ - Unexpected Success: 0
+ - Failed: 0
+Sum of execute time for each test: 75.5437 sec.
+
+==============
+Worker Balance
+==============
+ - Worker 0 (1 tests) => 0:01:15.543710
