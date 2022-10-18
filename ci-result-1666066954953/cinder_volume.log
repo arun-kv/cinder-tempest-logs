@@ -1,4 +1,4 @@
--- Logs begin at Tue 2022-10-18 12:48:40 IST, end at Tue 2022-10-18 12:49:39 IST. --
+-- Logs begin at Tue 2022-10-18 12:48:40 IST, end at Tue 2022-10-18 13:07:27 IST. --
 Oct 18 12:49:00 datacore-PowerEdge-R740 systemd[1]: Started Devstack devstack@c-vol.service.
 Oct 18 12:49:02 datacore-PowerEdge-R740 cinder-volume[2625636]: DEBUG oslo_concurrency.lockutils [-] Acquiring lock "singleton_lock" {{(pid=2625636) lock /usr/local/lib/python3.8/dist-packages/oslo_concurrency/lockutils.py:312}}
 Oct 18 12:49:02 datacore-PowerEdge-R740 cinder-volume[2625636]: DEBUG oslo_concurrency.lockutils [-] Acquired lock "singleton_lock" {{(pid=2625636) lock /usr/local/lib/python3.8/dist-packages/oslo_concurrency/lockutils.py:315}}
@@ -118,3 +118,122 @@ Oct 18 12:49:02 datacore-PowerEdge-R740 cinder-volume[2625636]: /usr/lib/python3
 Oct 18 12:49:02 datacore-PowerEdge-R740 cinder-volume[2625636]:   from cryptography.utils import int_from_bytes
 Oct 18 12:49:02 datacore-PowerEdge-R740 systemd[1]: devstack@c-vol.service: Main process exited, code=exited, status=1/FAILURE
 Oct 18 12:49:02 datacore-PowerEdge-R740 systemd[1]: devstack@c-vol.service: Failed with result 'exit-code'.
+Oct 18 13:06:48 datacore-PowerEdge-R740 systemd[1]: Started Devstack devstack@c-vol.service.
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: DEBUG oslo_concurrency.lockutils [-] Acquiring lock "singleton_lock" {{(pid=2744852) lock /usr/local/lib/python3.8/dist-packages/oslo_concurrency/lockutils.py:312}}
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: DEBUG oslo_concurrency.lockutils [-] Acquired lock "singleton_lock" {{(pid=2744852) lock /usr/local/lib/python3.8/dist-packages/oslo_concurrency/lockutils.py:315}}
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: DEBUG oslo_concurrency.lockutils [-] Releasing lock "singleton_lock" {{(pid=2744852) lock /usr/local/lib/python3.8/dist-packages/oslo_concurrency/lockutils.py:333}}
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: INFO dbcounter [None req-64c05cf8-ebea-49fd-a7a5-c4fdcb6fd4d3 None None] Registered counter for database cinder
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: DEBUG oslo_db.sqlalchemy.engines [None req-64c05cf8-ebea-49fd-a7a5-c4fdcb6fd4d3 None None] MySQL server mode set to STRICT_TRANS_TABLES,STRICT_ALL_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,TRADITIONAL,NO_ENGINE_SUBSTITUTION {{(pid=2744852) _check_effective_sql_mode /usr/local/lib/python3.8/dist-packages/oslo_db/sqlalchemy/engines.py:314}}
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: DEBUG dbcounter [-] [2744852] Writer thread running {{(pid=2744852) stat_writer /usr/local/lib/python3.8/dist-packages/dbcounter.py:99}}
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume [None req-64c05cf8-ebea-49fd-a7a5-c4fdcb6fd4d3 None None] Volume service datacore-PowerEdge-R740@lvmdriver-1 failed to start.: sqlalchemy.exc.ProgrammingError: (pymysql.err.ProgrammingError) (1146, "Table 'cinder.services' doesn't exist")
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: [SQL: SELECT services.created_at AS services_created_at, services.deleted_at AS services_deleted_at, services.deleted AS services_deleted, services.id AS services_id, services.uuid AS services_uuid, services.cluster_name AS services_cluster_name, services.host AS services_host, services.`binary` AS services_binary, services.updated_at AS services_updated_at, services.topic AS services_topic, services.report_count AS services_report_count, services.disabled AS services_disabled, services.availability_zone AS services_availability_zone, services.disabled_reason AS services_disabled_reason, services.modified_at AS services_modified_at, services.rpc_current_version AS services_rpc_current_version, services.object_current_version AS services_object_current_version, services.replication_status AS services_replication_status, services.active_backend_id AS services_active_backend_id, services.frozen AS services_frozen
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: FROM services
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: WHERE services.deleted = false AND services.`binary` = %(binary_1)s]
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: [parameters: {'binary_1': 'cinder-scheduler'}]
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: (Background on this error at: https://sqlalche.me/e/14/f405)
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume Traceback (most recent call last):
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/sqlalchemy/engine/base.py", line 1900, in _execute_context
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     self.dialect.do_execute(
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/sqlalchemy/engine/default.py", line 732, in do_execute
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     cursor.execute(statement, parameters)
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/pymysql/cursors.py", line 148, in execute
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     result = self._query(query)
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/pymysql/cursors.py", line 310, in _query
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     conn.query(q)
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/pymysql/connections.py", line 548, in query
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/pymysql/connections.py", line 775, in _read_query_result
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     result.read()
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/pymysql/connections.py", line 1156, in read
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     first_packet = self.connection._read_packet()
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/pymysql/connections.py", line 725, in _read_packet
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     packet.raise_for_error()
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/pymysql/protocol.py", line 221, in raise_for_error
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     err.raise_mysql_exception(self._data)
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/pymysql/err.py", line 143, in raise_mysql_exception
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     raise errorclass(errno, errval)
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume pymysql.err.ProgrammingError: (1146, "Table 'cinder.services' doesn't exist")
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume 
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume The above exception was the direct cause of the following exception:
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume 
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume Traceback (most recent call last):
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/opt/stack/cinder/cinder/cmd/volume.py", line 100, in _launch_service
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     server = service.Service.create(host=host,
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/opt/stack/cinder/cinder/service.py", line 417, in create
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     service_obj = cls(host, binary, topic, manager,
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/opt/stack/cinder/cinder/service.py", line 158, in __init__
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     self.manager = manager_class(host=self.host,
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/opt/stack/cinder/cinder/volume/manager.py", line 263, in __init__
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     super(VolumeManager, self).__init__(  # type: ignore
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/opt/stack/cinder/cinder/manager.py", line 192, in __init__
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     self.scheduler_rpcapi = scheduler_rpcapi.SchedulerAPI()
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/opt/stack/cinder/cinder/rpc.py", line 220, in __init__
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     obj_version_cap = self.determine_obj_version_cap()
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/opt/stack/cinder/cinder/rpc.py", line 274, in determine_obj_version_cap
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     version_cap = objects.Service.get_minimum_obj_version(
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/opt/stack/cinder/cinder/objects/service.py", line 202, in get_minimum_obj_version
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     return cls._get_minimum_version('object_current_version', context,
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/opt/stack/cinder/cinder/objects/service.py", line 173, in _get_minimum_version
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     services = ServiceList.get_all_by_binary(context, binary)
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/opt/stack/cinder/cinder/objects/service.py", line 236, in get_all_by_binary
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     services = db.service_get_all(context, binary=binary,
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/opt/stack/cinder/cinder/db/api.py", line 286, in service_get_all
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     return IMPL.service_get_all(context, backend_match_level, **filters)
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/opt/stack/cinder/cinder/db/sqlalchemy/api.py", line 161, in wrapper
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     return f(*args, **kwargs)
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/oslo_db/sqlalchemy/enginefacade.py", line 1010, in wrapper
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     return fn(*args, **kwargs)
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/opt/stack/cinder/cinder/db/sqlalchemy/api.py", line 914, in service_get_all
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     return [] if not query else query.all()
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/sqlalchemy/orm/query.py", line 2772, in all
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     return self._iter().all()
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/sqlalchemy/orm/query.py", line 2907, in _iter
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     result = self.session.execute(
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/sqlalchemy/orm/session.py", line 1712, in execute
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     result = conn._execute_20(statement, params or {}, execution_options)
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/sqlalchemy/engine/base.py", line 1705, in _execute_20
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     return meth(self, args_10style, kwargs_10style, execution_options)
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/sqlalchemy/sql/elements.py", line 333, in _execute_on_connection
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     return connection._execute_clauseelement(
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/sqlalchemy/engine/base.py", line 1572, in _execute_clauseelement
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     ret = self._execute_context(
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/sqlalchemy/engine/base.py", line 1943, in _execute_context
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     self._handle_dbapi_exception(
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/sqlalchemy/engine/base.py", line 2122, in _handle_dbapi_exception
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     util.raise_(newraise, with_traceback=exc_info[2], from_=e)
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/sqlalchemy/util/compat.py", line 208, in raise_
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     raise exception
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/sqlalchemy/engine/base.py", line 1900, in _execute_context
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     self.dialect.do_execute(
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/sqlalchemy/engine/default.py", line 732, in do_execute
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     cursor.execute(statement, parameters)
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/pymysql/cursors.py", line 148, in execute
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     result = self._query(query)
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/pymysql/cursors.py", line 310, in _query
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     conn.query(q)
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/pymysql/connections.py", line 548, in query
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/pymysql/connections.py", line 775, in _read_query_result
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     result.read()
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/pymysql/connections.py", line 1156, in read
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     first_packet = self.connection._read_packet()
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/pymysql/connections.py", line 725, in _read_packet
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     packet.raise_for_error()
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/pymysql/protocol.py", line 221, in raise_for_error
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     err.raise_mysql_exception(self._data)
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume   File "/usr/local/lib/python3.8/dist-packages/pymysql/err.py", line 143, in raise_mysql_exception
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume     raise errorclass(errno, errval)
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume sqlalchemy.exc.ProgrammingError: (pymysql.err.ProgrammingError) (1146, "Table 'cinder.services' doesn't exist")
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume [SQL: SELECT services.created_at AS services_created_at, services.deleted_at AS services_deleted_at, services.deleted AS services_deleted, services.id AS services_id, services.uuid AS services_uuid, services.cluster_name AS services_cluster_name, services.host AS services_host, services.`binary` AS services_binary, services.updated_at AS services_updated_at, services.topic AS services_topic, services.report_count AS services_report_count, services.disabled AS services_disabled, services.availability_zone AS services_availability_zone, services.disabled_reason AS services_disabled_reason, services.modified_at AS services_modified_at, services.rpc_current_version AS services_rpc_current_version, services.object_current_version AS services_object_current_version, services.replication_status AS services_replication_status, services.active_backend_id AS services_active_backend_id, services.frozen AS services_frozen
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume FROM services
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume WHERE services.deleted = false AND services.`binary` = %(binary_1)s]
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume [parameters: {'binary_1': 'cinder-scheduler'}]
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume (Background on this error at: https://sqlalche.me/e/14/f405)
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume 
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: ERROR cinder.cmd.volume [None req-64c05cf8-ebea-49fd-a7a5-c4fdcb6fd4d3 None None] No volume service(s) started successfully, terminating.
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: /usr/lib/python3/dist-packages/secretstorage/dhcrypto.py:15: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]:   from cryptography.utils import int_from_bytes
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]: /usr/lib/python3/dist-packages/secretstorage/util.py:19: CryptographyDeprecationWarning: int_from_bytes is deprecated, use int.from_bytes instead
+Oct 18 13:06:50 datacore-PowerEdge-R740 cinder-volume[2744852]:   from cryptography.utils import int_from_bytes
+Oct 18 13:06:50 datacore-PowerEdge-R740 systemd[1]: devstack@c-vol.service: Main process exited, code=exited, status=1/FAILURE
+Oct 18 13:06:50 datacore-PowerEdge-R740 systemd[1]: devstack@c-vol.service: Failed with result 'exit-code'.
