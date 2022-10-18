@@ -1,0 +1,27 @@
+{3} tempest.api.volume.admin.test_volume_hosts.VolumeHostsAdminTestsJSON.test_show_host [0.980014s] ... ok
+{2} tempest.api.volume.admin.test_volume_retype.VolumeRetypeWithoutMigrationTest.test_available_volume_retype [13.253015s] ... ok
+{3} tempest.api.volume.test_volumes_actions.VolumesActionsTest.test_get_volume_attachment [12.063753s] ... ok
+{0} tempest.api.volume.admin.test_groups.GroupsV314Test.test_create_group_from_group [34.806056s] ... ok
+{1} tempest.api.volume.admin.test_volumes_list.VolumesListAdminTestJSON.test_volume_list_param_tenant [30.920455s] ... ok
+{3} tempest.api.volume.test_volumes_list.VolumesListTestJSON.test_volumes_list_by_bootable [0.116534s] ... ok
+{3} tempest.api.volume.test_volumes_snapshots_list.VolumesSnapshotListTestJSON.test_snapshot_list_param_offset [0.029854s] ... ok
+{3} tempest.api.volume.test_volumes_snapshots_negative.VolumesSnapshotNegativeTestJSON.test_list_snapshots_invalid_param_sort [0.158769s] ... ok
+
+======
+Totals
+======
+Ran: 8 tests in 196.4732 sec.
+ - Passed: 8
+ - Skipped: 0
+ - Expected Fail: 0
+ - Unexpected Success: 0
+ - Failed: 0
+Sum of execute time for each test: 92.3285 sec.
+
+==============
+Worker Balance
+==============
+ - Worker 0 (1 tests) => 0:00:34.806056
+ - Worker 1 (1 tests) => 0:00:30.920455
+ - Worker 2 (1 tests) => 0:00:13.253015
+ - Worker 3 (5 tests) => 0:03:16.473216

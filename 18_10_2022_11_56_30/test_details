@@ -1,0 +1,8 @@
+tempest.api.volume.admin.test_volume_retype.VolumeRetypeWithoutMigrationTest.test_available_volume_retype[id-b90412ee-465d-46e9-b249-ec84a47d5f25]
+tempest.api.volume.admin.test_groups.GroupsV314Test.test_create_group_from_group[id-2424af8c-7851-4888-986a-794b10c3210e]
+tempest.api.volume.test_volumes_list.VolumesListTestJSON.test_volumes_list_by_bootable[id-2016a942-3020-40d7-95ce-7613bf8407ce]
+tempest.api.volume.admin.test_volumes_list.VolumesListAdminTestJSON.test_volume_list_param_tenant[id-5866286f-3290-4cfd-a414-088aa6cdc469]
+tempest.api.volume.test_volumes_actions.VolumesActionsTest.test_get_volume_attachment[compute,id-9516a2c8-9135-488c-8dd6-5677a7e5f371]
+tempest.api.volume.admin.test_volume_hosts.VolumeHostsAdminTestsJSON.test_show_host[id-21168d57-b373-4b71-a3ac-f2c88f0c5d31]
+tempest.api.volume.test_volumes_snapshots_list.VolumesSnapshotListTestJSON.test_snapshot_list_param_offset[id-ca96d551-17c6-4e11-b0e8-52d3bb8a63c7]
+tempest.api.volume.test_volumes_snapshots_negative.VolumesSnapshotNegativeTestJSON.test_list_snapshots_invalid_param_sort[id-27b5f37f-bf69-4e8c-986e-c44f3d6819b8,negative]
